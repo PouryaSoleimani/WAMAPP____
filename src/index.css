@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Vazir";
+  src: url("/fonts/Vazir-Bold.woff") format("woff"),
+    url("/fonts/Vazir-Medium.woff") format("woff"),
+    url("/fonts/Vazir-Thin.woff") format("woff");
+}
+
+:root {
+  font-family: "Vazir", system-ui;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --pink: #d70654;
+  --home-bg: #7ba8c4;
+  --header-button-bg: #fff;
+  --header-button-2-text: #d70654;
+  --gray: #dde2e5;
+  --grid-box: #fff;
+  --grid-box-hover: #dde2e5;
+  --flex-box: #000;
+  --text-primary: #000;
+  --text-secondary: #303030;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--home-bg);
+}
+
+.dark {
+  --gray: #cecece;
+  --pink: #d70654;
+  --home-bg: #000;
+  --header-button-bg: #7ba8c4;
+  --header-button-2-text: #d70654;
+  --grid-box: #202020;
+  --grid-box-hover: #dde2e5;
+  --flex-box: #3f3e3ef3;
+  --text-primary: #fff;
+  --text-secondary: #ff;
+}
+
+.GRID__PARENT {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 7.5px;
+  grid-row-gap: 7.5px;
+  padding: 10px;
+}
+
+.animate-click {
+  transform: scale(0.9) rotate(3deg) skew(3deg);
+  transition: transform 0.3s ease;
+}
+
+.navbar-blur {
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+}
