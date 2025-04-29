@@ -11,7 +11,6 @@ const HamburgerMenu = () => {
         setOpen(newOpen);
     };
 
-
     return (
         <>
             <Button onClick={toggleDrawer(true)} style={{ backgroundColor: 'transparent', border: 'none', minWidth: 0, minHeight: 0 }}>
