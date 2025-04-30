@@ -1,18 +1,29 @@
-import { FaMoneyBill } from "react-icons/fa";
+import { FaBitcoin, FaLaughWink, FaMoneyBill } from "react-icons/fa";
 import SingleAccordion from "./SingleAccordion";
+import { BsFileMusicFill, BsPeopleFill } from "react-icons/bs";
 
+const MenuItemsData = [
+    { id : 1, title: "تسهیلات ", desc: "loremloremloremloremlloremloremloremloermloremloremloremloremlorem", icon: FaMoneyBill },
+    { id: 2, title: " شبکه سرگرمی", desc: "loremloremloremloremlloremloremloremloermloremloremloremloremlorem", icon: FaLaughWink },
+    { id: 3, title: "اجتماعی ", desc: "loremloremloremloremlloremloremloremloermloremloremloremloremlorem", icon: BsPeopleFill },
+    { id: 4, title: "فیلم و موزیک ", desc: "loremloremloremloremlloremloremloremloermloremloremloremloremlorem", icon: BsFileMusicFill },
+    { id: 5, title: " بازارهای مالی", desc: "loremloremloremloremlloremloremloremloermloremloremloremloremlorem", icon: FaBitcoin },
+    { id: 6, title: "جدیدترین اخبار", desc: "loremloremloremloremlloremloremloremloermloremloremloremloremlorem", icon: FaMoneyBill },
+    { id: 7, title: "پیشنهادات ویژه", desc: "loremloremloremloremlloremloremloremloermloremloremloremloremlorem", icon: FaMoneyBill },
+    { id: 8, title: "دسته بندی جدید", desc: "loremloremloremloremlloremloremloremloermloremloremloremloremlorem", icon: FaLaughWink }, 
+    { id: 9, title: "آیتم جدید", desc: "loremloremloremloremlloremloremloremloermloremloremloremloremlorem", icon: FaLaughWink }, 
+]
 
 
 const HamburgerMenuContent = () => {
+     
 
 
     return (
         <div dir="rtl" className="flex flex-col gap-4">
-            <SingleAccordion title="تسهیلات" desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget." icon={FaMoneyBill} />
-            <SingleAccordion title="تسهیلات" desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget." icon={FaMoneyBill} />
-            <SingleAccordion title="تسهیلات" desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget." icon={FaMoneyBill} />
-            <SingleAccordion title="تسهیلات" desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget." icon={FaMoneyBill} />
-            <SingleAccordion title="تسهیلات" desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget." icon={FaMoneyBill} />
+            {MenuItemsData.map(item => (
+                <SingleAccordion key={item.id} title={item.title} desc={item.desc} icon={item.icon} />
+            ))}
         </div>
     )
 }
