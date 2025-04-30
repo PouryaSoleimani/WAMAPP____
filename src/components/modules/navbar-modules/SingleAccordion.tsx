@@ -117,7 +117,7 @@ const SingleAccordion = ({ title, desc, icon }: SingleAccordionProps) => {
         }}
       >
         <span className="flex items-center gap-2 text-[var(--text-menu-title)] text-[14px] font-medium">
-          <Icon className="text-[var(--text-primary)] w-5 h-5" />
+          <Icon className="text-[var(--text-menu-title)] w-5 h-5" />
           {title}
         </span>
       </AccordionSummary>
