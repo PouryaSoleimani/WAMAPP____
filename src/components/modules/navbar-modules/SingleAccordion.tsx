@@ -95,7 +95,7 @@ const CustomAccordion = styled(Accordion)(() => ({
 }));
 
 const AnimatedChevron = styled(FaChevronDown)({
-  transition: 'transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55)',
+  transition: 'transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55)',
   '&.rotated': {
     transform: 'rotate(180deg)',
   },
@@ -130,7 +130,7 @@ const SingleAccordion = ({ title, desc, icon }: SingleAccordionProps) => {
           {title}
         </span>
       </AccordionSummary>
-      <AccordionDetails sx={{ animation: `${contentExpand} 0.4s forwards`, '&.MuiCollapse-hidden': { animation: `${contentCollapse} 0.3s forwards`, }, }}>
+      <AccordionDetails sx={{ animation: `${contentExpand} 0.3s forwards`, '&.MuiCollapse-hidden': { animation: `${contentCollapse} 0.3s forwards`, }, }}>
         <div className="pl-8 text-[var(--text-secondary)]">
           {desc}
         </div>
