@@ -22,14 +22,14 @@ const FooterItemsData = [
     
   return (
     <div className='text-[var(--text-primary)] bg-[var(--home-bg)] flex flex-col items-center justify-center max-w-screen'>
-
+        <img src="/logo.png" alt="Footer Image" className="w-32 h-auto my-6" />
           <div dir="rtl" className=" max-w-full justify-between m-0 flex flex-col gap-4">
               {FooterItemsData.map(item => (
                   <FooterAccordion key={item.id} title={item.title} desc={item.desc} icon={item.icon} />
               ))}
           </div>
           <div id='FOOTER__COPYRIGHT' className='flex flex-col items-center justify-center w-full h-full p-4' dir='ltr'>
-            <p className='text-xs'>© 2025 Vamapp. All rights reserved.</p>
+        <p className='text-xs'>© 2025 Vamapp. All rights reserved.</p>
             <p className='text-xs'>Developed by Vamapp Team</p>
             <p className='text-xs'>Contact us: support@vamapp.com</p>
         </div>
