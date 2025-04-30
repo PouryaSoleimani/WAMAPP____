@@ -106,7 +106,7 @@ const FooterAccordion = ({ title, desc, icon }: SingleAccordionProps) => {
     const Icon = icon;
 
     return (
-        <CustomAccordion disableGutters>
+        <CustomAccordion disableGutters sx={{width : "100%" , padding : "0 7px"}}>
             <AccordionSummary
                 expandIcon={<AnimatedChevron className="text-[var(--text-primary)] w-2.5 h-2.5"
                     sx={{ '&.Mui-expanded': { animation: `${rotateDown} 0.4s forwards`, }, '&:not(.Mui-expanded)': { animation: `${rotateUp} 0.4s forwards`, } }} />
