@@ -109,14 +109,10 @@ const SingleAccordion = ({ title, desc, icon }: SingleAccordionProps) => {
       <AccordionSummary
         expandIcon={
           <AnimatedChevron className="text-[var(--text-primary)]"
-            sx={{ '&.Mui-expanded': { animation: `${rotateDown} 0.4s forwards`, }, '&:not(.Mui-expanded)': { animation: `${rotateUp} 0.4s forwards`, } }}ّ   />
+            sx={{ '&.Mui-expanded': { animation: `${rotateDown} 0.4s forwards`, }, '&:not(.Mui-expanded)': { animation: `${rotateUp} 0.4s forwards`, } }} />
         }
         sx={{
-          '& .MuiAccordionSummary-content': {
-            margin: '8px 0',
-            transition: 'margin 0.4s ease',
-            animation: `${slideInWithBounce} 0.6s ease-in-out`,
-          },
+          '& .MuiAccordionSummary-content': { margin: '8px 0', transition: 'margin 0.4s ease', animation: `${slideInWithBounce} 0.6s ease-in-out`, },
           minHeight: '40px',
           padding: '0 8px',
         }}
