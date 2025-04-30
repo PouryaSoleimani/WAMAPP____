@@ -95,7 +95,7 @@ const CustomAccordion = styled(Accordion)(() => ({
 }));
 
 const AnimatedChevron = styled(FaChevronDown)({
-  transition: 'transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55)',
+  transition: 'transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55)',
   '&.rotated': {
     transform: 'rotate(180deg)',
   },
@@ -110,15 +110,15 @@ const SingleAccordion = ({ title, desc, icon }: SingleAccordionProps) => {
         expandIcon={
           <AnimatedChevron className="text-[var(--text-primary)]"
             sx={{
-              '&.Mui-expanded': { animation: `${rotateDown} 0.5s forwards`, },
-              '&:not(.Mui-expanded)': { animation: `${rotateUp} 0.5s forwards`, }
+              '&.Mui-expanded': { animation: `${rotateDown} 0.4s forwards`, },
+              '&:not(.Mui-expanded)': { animation: `${rotateUp} 0.4s forwards`, }
             }}
           />
         }
         sx={{
           '& .MuiAccordionSummary-content': {
             margin: '8px 0',
-            transition: 'margin 0.5s ease',
+            transition: 'margin 0.4s ease',
             animation: `${slideInWithBounce} 0.6s ease-in-out`,
           },
           minHeight: '40px',

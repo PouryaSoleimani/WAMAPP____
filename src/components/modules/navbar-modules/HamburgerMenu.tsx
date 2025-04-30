@@ -17,7 +17,7 @@ const HamburgerMenu = () => {
                 <FaBars className="w-8 h-8 text-[var(--text-primary)]" />
             </Button>
             <Drawer open={open} onClose={toggleDrawer(false)} transitionDuration={300} translate='yes' className='bg-black/50 z-[1000]'>
-                <div className="p-4 bg-[var(--home-bg)] text-[var(--text-primary)] h-auto min-h-screen w-[230px]">
+                <div className="p-4 bg-[var(--home-bg)] text-[var(--text-primary)] h-full overflow-scroll w-[230px]">
                     <HamburgerMenuContent />
                 </div>
             </Drawer>
