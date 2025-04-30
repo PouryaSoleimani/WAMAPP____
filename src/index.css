@@ -6,7 +6,7 @@
     url("/fonts/Vazir-Medium.woff") format("woff"),
     url("/fonts/Vazir-Thin.woff") format("woff");
 }
-
+/* THEME */
 :root {
   font-family: "Vazir", system-ui;
   font-synthesis: none;
@@ -23,15 +23,7 @@
   --flex-box: #000;
   --text-primary: #000;
   --text-secondary: #303030;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  align-items: start;
-  justify-content: center;
-  min-height: 100vh;
-  background-color: var(--home-bg);
+  --text-menu: #fabb14;  
 }
 
 .dark {
@@ -45,6 +37,19 @@ body {
   --flex-box: #3f3e3ef3;
   --text-primary: #fff;
   --text-secondary: #ff;
+  --text-menu: #efebeb;
+}
+
+
+
+
+body {
+  margin: 0;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--home-bg);
 }
 
 .GRID__PARENT {
