@@ -13,6 +13,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --main : "#fff";
   --pink: #d70654;
   --home-bg: #7ba8c4;
   --header-button-bg: #fff;
@@ -27,6 +28,7 @@
 }
 
 .dark {
+  --main : #000;
   --gray: #cecece;
   --pink: #d70654;
   --home-bg: #000;
@@ -39,9 +41,6 @@
   --text-secondary: #818080;
   --text-menu-title: #cdcdcd;
 }
-
-
-
 
 body {
   margin: 0;
@@ -56,8 +55,8 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 7.5px;
-  grid-row-gap: 7.5px;
+  grid-column-gap: 7px;
+  grid-row-gap: 7px;
   padding: 10px;
 }
 
