@@ -76,12 +76,12 @@ const CustomAccordion = styled(Accordion)(() => ({
   width: "100%",
   padding: 0,
   color: 'var(--text-primary)',
-  transition: 'all 0.5s ease-in-out',
+  transition: 'all 0.3s ease-in-out',
 
   '& .MuiCollapse-root': {
-    animation: `${contentExpand} 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards`,
+    animation: `${contentExpand} 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) forwards`,
     '&.MuiCollapse-hidden': {
-      animation: `${contentCollapse} 0.5s cubic-bezier(0.36, 0, 0.66, -0.56) forwards`,
+      animation: `${contentCollapse} 0.3s cubic-bezier(0.36, 0, 0.66, -0.56) forwards`,
     },
     overflow: 'hidden',
   },
@@ -110,16 +110,16 @@ const SingleAccordion = ({ title, desc, icon }: SingleAccordionProps) => {
         expandIcon={
           <AnimatedChevron className="text-[var(--text-primary)]"
             sx={{
-              '&.Mui-expanded': { animation: `${rotateDown} 0.4s forwards`, },
-              '&:not(.Mui-expanded)': { animation: `${rotateUp} 0.4s forwards`, }
+              '&.Mui-expanded': { animation: `${rotateDown} 0.3s forwards`, },
+              '&:not(.Mui-expanded)': { animation: `${rotateUp} 0.3s forwards`, }
             }}
           />
         }
         sx={{
           '& .MuiAccordionSummary-content': {
             margin: '8px 0',
-            transition: 'margin 0.4s ease',
-            animation: `${slideInWithBounce} 0.6s ease-in-out`,
+            transition: 'margin 0.3s ease',
+            animation: `${slideInWithBounce} 0.3s ease-in-out`,
           },
           minHeight: '40px',
           padding: '0 8px',
