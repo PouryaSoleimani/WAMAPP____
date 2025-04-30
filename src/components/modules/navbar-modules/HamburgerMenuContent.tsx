@@ -21,7 +21,7 @@ const MenuItemsData = [
 const HamburgerMenuContent = () => {
 
     return (
-        <div dir="rtl" className="flex flex-col gap-4">
+        <div dir="rtl" className="flex flex-col gap-4 max-w-screen">
             {MenuItemsData.map(item => (
                 <SingleAccordion key={item.id} title={item.title} desc={item.desc} icon={item.icon} />
             ))}
