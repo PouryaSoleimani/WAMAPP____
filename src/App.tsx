@@ -4,6 +4,7 @@ import HeaderTitleComponent from "./components/modules/header-modules/HeaderTitl
 import NavBarComponent from "./components/templates/NavBarComponent";
 import CategoryFlexSection from "./components/templates/CategoryFlexSection";
 import CategoryGridSection from "./components/templates/CategoryGridSection";
+import FooterComponent from "./components/templates/FooterComponent";
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
             <HeaderButtonsTopComponent />
             <CategoryFlexSection />
             <CategoryGridSection />
+            <FooterComponent/>
         </div>
     );
 }
