@@ -131,7 +131,7 @@ const SingleAccordion = ({ title, desc, icon }: SingleAccordionProps) => {
         </span>
       </AccordionSummary>
       <AccordionDetails sx={{ animation: `${contentExpand} 0.4s forwards`, '&.MuiCollapse-hidden': { animation: `${contentCollapse} 0.3s forwards`, }, }}>
-        <div className="pl-8 text-[var(--text-menu)] text-[13px] leading-5">
+        <div className="pl-8 text-[var(--text-secondary)] text-[13px] leading-5">
           {desc}
         </div>
       </AccordionDetails>

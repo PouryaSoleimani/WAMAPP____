@@ -22,8 +22,8 @@
   --grid-box-hover: #dde2e5;
   --flex-box: #000;
   --text-primary: #000;
-  --text-secondary: #303030;
-  --text-menu: #151515;  
+  --text-secondary: #4b4b4b;
+  --text-menu-title: #151515;
 }
 
 .dark {
@@ -36,8 +36,8 @@
   --grid-box-hover: #dde2e5;
   --flex-box: #3f3e3ef3;
   --text-primary: #fff;
-  --text-secondary: #ff;
-  --text-menu: #efebeb;
+  --text-secondary: #818080;
+  --text-menu-title: #cdcdcd;
 }
 
 
