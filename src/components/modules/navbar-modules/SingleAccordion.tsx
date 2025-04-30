@@ -54,6 +54,20 @@ const rotateUp = keyframes`
   }
 `;
 
+const slideInWithBounce = keyframes`
+  0% {
+    transform: translateX(-20%);
+    opacity: 0;
+  }
+  60% {
+    transform: translateX(10%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+  }
+`;
+
 const CustomAccordion = styled(Accordion)(() => ({
   backgroundColor: 'transparent',
   boxShadow: 'none',
@@ -62,7 +76,7 @@ const CustomAccordion = styled(Accordion)(() => ({
   width: "100%",
   padding: 0,
   color: 'var(--text-primary)',
-  transition: 'all 0.3s ease-in-out',
+  transition: 'all 0.5s ease-in-out',
 
   '& .MuiCollapse-root': {
     animation: `${contentExpand} 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards`,
@@ -101,7 +115,15 @@ const SingleAccordion = ({ title, desc, icon }: SingleAccordionProps) => {
             }}
           />
         }
-        sx={{ '& .MuiAccordionSummary-content': { margin: '8px 0', transition: 'margin 0.3s ease', }, minHeight: '40px', padding: '0 8px', }}
+        sx={{
+          '& .MuiAccordionSummary-content': {
+            margin: '8px 0',
+            transition: 'margin 0.5s ease',
+            animation: `${slideInWithBounce} 0.6s ease-in-out`,
+          },
+          minHeight: '40px',
+          padding: '0 8px',
+        }}
       >
         <span className="flex items-center gap-2">
           <Icon className="text-[var(--text-primary)] w-6 h-6" />
