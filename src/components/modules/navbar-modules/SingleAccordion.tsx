@@ -107,8 +107,7 @@ const SingleAccordion = ({ title, desc, icon }: SingleAccordionProps) => {
   return (
     <CustomAccordion disableGutters>
       <AccordionSummary
-        expandIcon={
-          <AnimatedChevron className="text-[var(--text-primary)]"
+        expandIcon={ <AnimatedChevron className="text-[var(--text-primary)] w-2.5 h-2.5"
             sx={{ '&.Mui-expanded': { animation: `${rotateDown} 0.4s forwards`, }, '&:not(.Mui-expanded)': { animation: `${rotateUp} 0.4s forwards`, } }} />
         }
         sx={{
@@ -117,8 +116,8 @@ const SingleAccordion = ({ title, desc, icon }: SingleAccordionProps) => {
           padding: '0 8px',
         }}
       >
-        <span className="flex items-center gap-2">
-          <Icon className="text-[var(--text-primary)] w-6 h-6" />
+        <span className="flex items-center gap-2 text-[var(--text-menu-title)] text-[14px] font-medium">
+          <Icon className="text-[var(--text-primary)] w-5 h-5" />
           {title}
         </span>
       </AccordionSummary>
