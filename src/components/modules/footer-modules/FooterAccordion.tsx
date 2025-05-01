@@ -73,7 +73,6 @@ const CustomAccordion = styled(Accordion)(() => ({
     boxShadow: 'none',
     border: 'none',
     margin: 0,
-   maxWidth: "100vw",
     padding: 0,
     color: 'var(--text-primary)',
     transition: 'all 0.3s ease-in-out',
@@ -105,7 +104,7 @@ const FooterAccordion = ({ title, desc, icon }: SingleAccordionProps) => {
     const Icon = icon;
 
     return (
-        <CustomAccordion disableGutters sx={{width : "100%" , padding : "0 6px"}}>
+        <CustomAccordion disableGutters sx={{width : "100%" , padding : "0 6px" , margin : 0}}>
             <AccordionSummary
                 expandIcon={<AnimatedChevron className="text-[var(--text-primary)] w-2.5 h-2.5"
                     sx={{ '&.Mui-expanded': { animation: `${rotateDown} 0.4s forwards`, }, '&:not(.Mui-expanded)': { animation: `${rotateUp} 0.4s forwards`, } }} />
