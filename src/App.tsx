@@ -8,14 +8,16 @@ import FooterComponent from "./components/templates/FooterComponent";
 
 function App() {
     return (
-        <div className="mx-auto relative inset-0 text-center z-10 h-auto mt-[55px]" dir="rtl">
-            <NavBarComponent/>
-            <HeaderTitleComponent/>
-            <HeaderButtonsTopComponent/>
-            <CategoryFlexSection/>
-            <CategoryGridSection/>
+        <>
+            <NavBarComponent />
+            <main className="mx-auto relative inset-0 text-center z-10 h-auto mt-[55px] p-2" dir="rtl">
+                <HeaderTitleComponent />
+                <HeaderButtonsTopComponent />
+                <CategoryFlexSection />
+                <CategoryGridSection />
+            </main>
             <FooterComponent/>
-        </div>
+        </>
     );
 }   
 
