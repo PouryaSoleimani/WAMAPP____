@@ -10,12 +10,14 @@ function App() {
     return (
         <>
             <NavBarComponent />
+
             <main className="mx-auto relative inset-0 text-center z-10 h-auto mt-[55px] p-2" dir="rtl">
                 <HeaderTitleComponent />
                 <HeaderButtonsTopComponent />
                 <CategoryFlexSection />
                 <CategoryGridSection />
             </main>
+            
             <FooterComponent/>
         </>
     );
