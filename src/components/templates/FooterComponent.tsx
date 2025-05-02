@@ -21,7 +21,7 @@ const FooterItemsData = [
 
 
   return (
-    <div className='text-[var(--text-primary)] bg-[var(--home-bg)]  flex flex-col items-stretch'>
+    <div className='text-[var(--text-primary)] bg-[var(--menu-bg)]  flex flex-col items-stretch'>
         <img src="/logo.png" alt="Footer Image" className="w-32 h-auto my-6 mx-auto" />
 
 
@@ -30,8 +30,6 @@ const FooterItemsData = [
                   <FooterAccordion key={item.id} title={item.title} desc={item.desc} icon={item.icon} />
               ))}
           </div>
-
-
 
           <div id='FOOTER__COPYRIGHT' className='flex flex-col items-center justify-center w-2/3 mx-auto h-full p-4' dir='ltr'>
         <p className='text-xs'>© 2025 Vamapp. All rights reserved.</p>

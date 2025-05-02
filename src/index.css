@@ -25,6 +25,7 @@
   --text-primary: #000;
   --text-secondary: #4b4b4b;
   --text-menu-title: #212121;
+  --menu-bg : "#fff";
 }
 
 .dark {
@@ -40,6 +41,7 @@
   --text-primary: #fff;
   --text-secondary: #818080;
   --text-menu-title: #cdcdcd;
+  --menu-bg : "#3f3e3ef3";
 }
 
 body {
