@@ -1,9 +1,10 @@
-import { FaBitcoin, FaLaughWink, FaMoneyBill, FaNewspaper } from "react-icons/fa";
+import { FaBitcoin, FaLaughWink, FaLinkedin, FaMoneyBill, FaNewspaper, FaTelegram } from "react-icons/fa";
 import { BsFileMusicFill, BsPeopleFill } from "react-icons/bs";
 import { MdLocalOffer } from "react-icons/md";
-import { AiFillHeart } from "react-icons/ai";
+import { AiFillFacebook, AiFillHeart, AiFillInstagram, AiFillTwitterCircle } from "react-icons/ai";
 import { HiTemplate } from "react-icons/hi";
 import FooterAccordion from '../modules/footer-modules/FooterAccordion';
+import { FaSquareWhatsapp } from "react-icons/fa6";
 
 const FooterComponent = () => {
 
@@ -31,6 +32,14 @@ const FooterItemsData = [
               ))}
           </div>
 
+      <div className="flex items-center justify-center gap-2 mt-4 text-3xl w-full h-full p-4">
+        <FaLinkedin className="text-blue-500 hover:text-blue-700 duration-300 cursor-pointer" />
+        <AiFillTwitterCircle className="text-blue-400 hover:text-blue-600 duration-300 cursor-pointer" />
+        <AiFillFacebook className="text-blue-600 hover:text-blue-800 duration-300 cursor-pointer" />
+        <AiFillInstagram className="text-pink-500 hover:text-pink-700 duration-300 cursor-pointer" />
+        <FaSquareWhatsapp className="text-green-500 hover:text-green-700 duration-300 cursor-pointer" />
+        <FaTelegram className="text-blue-400 hover:text-blue-600 duration-300 cursor-pointer" />
+      </div>
           <div id='FOOTER__COPYRIGHT' className='flex flex-col items-center justify-center w-2/3 mx-auto h-full p-4' dir='ltr'>
         <p className='text-xs'>© 2025 Vamapp. All rights reserved.</p>
             <p className='text-xs'>Developed by Vamapp Team</p>
