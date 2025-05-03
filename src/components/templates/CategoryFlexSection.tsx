@@ -1,8 +1,8 @@
 import CategoryFlexBoxComponent from '../modules/categories-modules/CategoryFlexBoxComponent';
 
 const categoryFlexBoxesData = [
-    { id: 1, title: "شبکه ی سرگرمی" ,animationPath : "public/animations/flex-box-2.json"},
-    { id: 2, title: "فیلم و موزیک" ,animationPath : "public/animations/flex-box-1.json"},
+    { id: 1, title: "شبکه ی سرگرمی" ,animationPath : "/public/animations/flex-box-2.json"},
+    { id: 2, title: "فیلم و موزیک" ,animationPath : "/public/animations/flex-box-1.json"},
 ];
 const CategoryFlexSection = () => {
 
