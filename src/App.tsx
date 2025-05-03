@@ -7,20 +7,20 @@ import CategoryGridSection from "./components/templates/CategoryGridSection";
 import FooterComponent from "./components/templates/FooterComponent";
 
 function App() {
-    return (
-        <>
-            <NavBarComponent />
+      return (
+            <>
+                  <NavBarComponent />
 
-            <main className="mx-auto relative inset-0 text-center z-10 h-auto mt-[55px] p-2" dir="rtl">
-                <HeaderTitleComponent />
-                <HeaderButtonsTopComponent />
-                <CategoryFlexSection />
-                <CategoryGridSection />
-            </main>
-            
-            <FooterComponent/>
-        </>
-    );
-}   
+                  <main className="mx-auto relative inset-0 text-center z-10 h-auto mt-[55px] p-2" dir="rtl">
+                        <HeaderTitleComponent />
+                        <HeaderButtonsTopComponent />
+                        <CategoryFlexSection />
+                        <CategoryGridSection />
+                  </main>
+
+                  <FooterComponent />
+            </>
+      );
+}
 
 export default App;
