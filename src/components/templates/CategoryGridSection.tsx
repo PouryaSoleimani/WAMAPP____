@@ -10,7 +10,7 @@ const boxDatas = [
     { id: 7, title: " لوازم ساختمان", img: "/new-vectors/construction.png" },
     { id: 8, title: "رستوران", img: "/new-vectors/restaurant.png" },
     { id: 9, title: "لوازم دیجیتال", img: "/new-vectors/digital.png" },
-]
+]   
 
 
 
