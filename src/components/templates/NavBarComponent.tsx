@@ -3,7 +3,7 @@ import { Around } from "@theme-toggles/react";
 import "@theme-toggles/react/css/Around.css";
 import LanguageToggleComponent from "../modules/header-modules/LanguageToggleComponent";
 import HamburgerMenu from "../modules/navbar-modules/HamburgerMenu";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 
 
 const NavBarComponent = () => {
@@ -32,7 +32,7 @@ const NavBarComponent = () => {
   return (
     <div className="w-full z-50 fixed top-0 left-0 right-0 bg-[var(--home-bg)] flex flex-wrap items-center justify-between flex-row-reverse pl-2">
       <div id="NAVBAR___LEFT" className="w-1/3 h-full flex items-center justify-end"    >
-        <Link to="/">
+        <Link to="/" className="flex items-center justify-center h-full">
         <img src="/logo.png" alt="vamapp-logo" className="w-20" />
         </Link>
       </div>

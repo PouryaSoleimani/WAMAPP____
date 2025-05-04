@@ -22,7 +22,7 @@ const FooterItemsData = [
 
 
   return (
-    <div className='text-[var(--text-primary)] bg-[var(--menu-bg)]  flex flex-col items-stretch w-screen'>
+    <div className='text-[var(--text-primary)] bg-[var(--menu-bg)]  flex flex-col items-stretch' dir='rtl'>
         <img src="/logo.png" alt="Footer Image" className="w-32 h-auto my-6 mx-auto" />
 
 
