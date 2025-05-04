@@ -1,4 +1,5 @@
 // ^ HOME PAGE ==================================================================================================================================================
+import { Link } from "react-router";
 import HeaderButtonsTopComponent from "../components/modules/header-modules/HeaderButtonsTopComponent";
 import HeaderTitleComponent from "../components/modules/header-modules/HeaderTitleComponent";
 import CategoryFlexSection from "../components/templates/CategoryFlexSection";
@@ -11,7 +12,9 @@ function HomePage() {
             <>
                   <NavBarComponent />
                   <main className="mx-auto relative inset-0 text-center z-10 h-auto mt-[55px] p-2" dir="rtl">
+                        <Link to="/credits">
                         <HeaderTitleComponent title="دریافت اعتبار خرید کالا" />
+                        </Link>
                         <HeaderButtonsTopComponent />
                         <CategoryFlexSection />
                         <CategoryGridSection />
