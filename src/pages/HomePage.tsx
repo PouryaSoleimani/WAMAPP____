@@ -1,12 +1,12 @@
 // ^ HOME PAGE ==================================================================================================================================================
-import HeaderButtonsTopComponent from "./components/modules/header-modules/HeaderButtonsTopComponent";
-import HeaderTitleComponent from "./components/modules/header-modules/HeaderTitleComponent";
-import NavBarComponent from "./components/templates/NavBarComponent";
-import CategoryFlexSection from "./components/templates/CategoryFlexSection";
-import CategoryGridSection from "./components/templates/CategoryGridSection";
-import FooterComponent from "./components/templates/FooterComponent";
+import HeaderButtonsTopComponent from "../components/modules/header-modules/HeaderButtonsTopComponent";
+import HeaderTitleComponent from "../components/modules/header-modules/HeaderTitleComponent";
+import NavBarComponent from "../components/templates/NavBarComponent";
+import CategoryFlexSection from "../components/templates/CategoryFlexSection";
+import CategoryGridSection from "../components/templates/CategoryGridSection";
+import FooterComponent from "../components/templates/FooterComponent";
 
-function App() {
+function HomePage() {
       return (
             <>
                   <NavBarComponent />
@@ -23,4 +23,4 @@ function App() {
       );
 }
 
-export default App;
+export default HomePage;
