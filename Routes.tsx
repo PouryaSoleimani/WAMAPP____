@@ -1,5 +1,4 @@
 // ^ ROUTER _________________________________________________________________________________________________________
-import React from "react";
 import { createBrowserRouter } from "react-router-dom";
 import  HomePage  from "./src/Routes/HomePage";
 import CreditPage from "./src/Routes/CreditPage";

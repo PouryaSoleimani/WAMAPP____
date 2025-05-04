@@ -1,8 +1,10 @@
-import React from 'react'
+
 
 const CreditPage = () => {
   return (
-    <div>CreditPage</div>
+    <div className="w-full h-full pt-16 px-2">
+      
+    </div>
   )
 }
 
