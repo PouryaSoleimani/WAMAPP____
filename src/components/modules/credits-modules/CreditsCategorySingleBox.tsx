@@ -1,11 +1,11 @@
-import { Card, CardActionArea, CardContent, Typography } from '@mui/material'
+import { FaChevronLeft } from "react-icons/fa"; 
+import { Card, CardActionArea, CardContent } from '@mui/material'
 import React from 'react';
 
 interface CardProps {
   id: number;
   title: string;
-  description: string;
-  icon: React.ElementType;
+  icon: React.ElementType ;
 }
 interface CreditsCategorySingleBoxProps {
   card: CardProps;
@@ -16,7 +16,7 @@ interface CreditsCategorySingleBoxProps {
 // COMPONENT ===============================================================================================================================================================================
 const CreditsCategorySingleBox:React.FC<CreditsCategorySingleBoxProps> = ({ card, index, selectedCard, setSelectedCard }) => {
   return (
-      <Card key={card.id} sx={{ width: "100%", height: '130px', margin: 2, borderRadius: 2, boxShadow: 3, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+      <Card key={card.id} sx={{ width: "100%", height: '80px', margin: 2, borderRadius: 2, boxShadow: 3, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
           <CardActionArea
               onClick={() => setSelectedCard(index)}
               data-active={selectedCard === index ? '' : undefined}
@@ -31,12 +31,12 @@ const CreditsCategorySingleBox:React.FC<CreditsCategorySingleBoxProps> = ({ card
           >
               <CardContent sx={{ height: '100%', display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
                   <div>
-                      {React.createElement(card.icon, { style: { fontSize: '40px' } })}
+                      {React.createElement(card.icon, { style: { fontSize: '40px' , backgroundColor : "#cccccc9d" , padding : "6px" , borderRadius: '4px' } })}
                   </div>
-                  <Typography variant="h5" component="div">
+                  <h3 className='font-bold text-md tracking-tight'>
                       {card.title}
-                  </Typography>
-                  <Typography variant="body2" color="text.secondary">  {card.description}</Typography>
+                  </h3>
+                  <FaChevronLeft />
               </CardContent>
           </CardActionArea>
       </Card>
