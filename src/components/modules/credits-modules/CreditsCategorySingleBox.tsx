@@ -58,7 +58,7 @@ const CreditsCategorySingleBox: React.FC<CreditsCategorySingleBoxProps> = ({ car
                                           )}    
                                     </div>
                                     <div className="flex w-full items-center justify-between rounded-md mt-4">
-                                          <Button component={Link} color="success" variant="contained" to="/" sx={{ textDecoration: 'none'  , padding : "4px 10px" , letterSpacing :"-0.5px" , fontWeight : "600"}}>درخواست وام</Button>
+                                          <Button component={Link} color="success" variant="contained" to="/" sx={{ textDecoration: 'none'  , padding : "4px 10px" , letterSpacing :"-0.5px" , fontWeight : "600", fontFamily : "Vazir"}}>درخواست وام</Button>
                                     </div>
                               </div>
                         </CardContent>
