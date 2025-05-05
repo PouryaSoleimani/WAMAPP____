@@ -1,23 +1,19 @@
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
-const cities = [
-  { "id": 1, "name": "تهران" },
-  { "id": 2, "name": "شیراز" },
-  { "id": 3, "name": "اصفهان" },
-  { "id": 4, "name": "مشهد" },
-  { "id": 5, "name": "تبریز" },
-  { "id": 6, "name": "کرمان" },
-  { "id": 7, "name": "یزد" },
-  { "id": 8, "name": "قم" },
-  { "id": 9, "name": "کرج" },
-  { "id": 10, "name": "اهواز" }
+const subjects = [
+  { "id": 1, "name": "تحصیلی" },
+  { "id": 2, "name": "دوم" },
+  { "id": 3, "name": "سوم" },
+  { "id": 4, "name": "چهارم" },
+  { "id": 5, "name": "پنجم" },
+  { "id": 6, "name": "ششم" },
 ]
 
 export type citiesArrayType = {id : number, name : string}[];
 
-const FilterDropDown = () => {
+const FilterDropDownSubjects = () => {
 
-  const cityOptions = cities.map((city: { id: number; name: string }) => ({ id: city.id, name: city.name }));
+  const cityOptions = subjects.map((subject: { id: number; name: string }) => ({ id: subject.id, name: subject.name }));
   
   return (
 
@@ -39,7 +35,7 @@ const FilterDropDown = () => {
       }}
       renderInput={(params) => (
         <div dir='rtl'>
-          <TextField dir='rtl' {...params} label="انتخاب شهر" sx={{ '& .MuiInputLabel-root': { fontFamily: 'Vazir', fontSize: '14px', color: 'var(--text-secondary)', }, '& input': { textAlign: 'right', }, }} />
+          <TextField dir='rtl' {...params} label="انتخاب موضوع" sx={{ '& .MuiInputLabel-root': { fontFamily: 'Vazir', fontSize: '14px', color: 'var(--text-secondary)', }, '& input': { textAlign: 'right', }, }} />
         </div>
       )}
     />
@@ -47,4 +43,4 @@ const FilterDropDown = () => {
   )
 }
 
-export default FilterDropDown
+export default FilterDropDownSubjects
