@@ -24,27 +24,17 @@ const CreditsCategorySingleBox: React.FC<CreditsCategorySingleBoxProps> = ({ car
                   <CardActionArea
                         onClick={() => setSelectedCard(index)} 
                         data-active={selectedCard === index ? "" : undefined}
-                        sx={{ 
-                              backgroundColor: selectedCard === index ? "var(--inner-box-hover)" : "var(--inner-box-bg)", 
-                              height: "100%", 
-                              borderRadius: 2,
-                              color: selectedCard === index ? "var(--text-primary)" : "var(--text-primary)", 
-                              transition: "background-color 0.3s ease",
-                              "&:hover": { backgroundColor: selectedCard === index ? "var(--inner-box-hover)" : "var(--inner-box-hover)" }
-                        }}>
-                        <CardContent sx={{ height: "100%", display: "flex", flexDirection: "column", gap: "16px",padding : "10px", justifyContent: "space-between", alignItems: "center" }}>
+                        sx={{ backgroundColor: selectedCard === index ? "var(--inner-box-hover)" : "var(--inner-box-bg)", height: "100%", borderRadius: 2, color: selectedCard === index ? "var(--text-primary)" : "var(--text-primary)", transition: "background-color 0.3s ease", "&:hover": { backgroundColor: selectedCard === index ? "var(--inner-box-hover)" : "var(--inner-box-hover)" } }}>
+                        <CardContent sx={{ height: "100%", display: "flex", flexDirection: "column", gap: "8px",padding : "8px", justifyContent: "space-between", alignItems: "center" }}>
                               <div id="TOP" className="flex items-center justify-between w-full">
-                                    {/* {React.createElement(card.icon, { style: { fontSize: "40px", backgroundColor: "#cccccc9d", padding: "3px", borderRadius: "8px" } })} */}
                                     <h3 className="font-bold text-lg ">{card.title}</h3>
                                     <FaChevronLeft />
                               </div>
 
                               <div className="flex flex-col items-stretch justify-between w-full">
                                     <div className="flex w-full items-center justify-between gap-4 text-justify">
-                                          <p className="text-xs w-[60%]">{card.desc}</p>
-                                          {isShowVamapp === true && (
-                                                <img src="/logo.png" alt="logo" className="w-16 ml-1" />
-                                          )}
+                                          <p className="text-xs w-[60%] text-[var(--text-secondary)]">{card.desc}</p>
+                                          {isShowVamapp === true && (<img src="/logo.png" alt="logo" className="w-16 ml-1" />)}
                                     </div>
                                     <div className="mt-4 flex items-center justify-evenly">
                                           {isShowCountryComps === true && (
