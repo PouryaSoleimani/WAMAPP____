@@ -39,11 +39,11 @@ const CreditsCategorySingleBox: React.FC<CreditsCategorySingleBoxProps> = ({ car
                                     <div className="mt-4 flex items-center justify-evenly">
                                           {isShowCountryComps === true && (
                                                 <>
-                                                <img src="/company_logos/digipay.png" alt="Country Comps Logo" className="size-10" />
-                                                <img src="/company_logos/snapppay.jpg" alt="Country Comps Logo" className="size-10 rounded" />
-                                                <img src="/company_logos/tara.png" alt="Country Comps Logo" className="size-10 rounded" />
-                                                <img src="/company_logos/wepod.jpg" alt="Country Comps Logo" className="size-10 rounded" />
-                                                <img src="/company_logos/blubank.webp" alt="Country Comps Logo" className="size-10 rounded" />
+                                                <img src="/company_logos/digipay.png" alt="Country Comps Logo" className="size-8" />
+                                                <img src="/company_logos/snapppay.jpg" alt="Country Comps Logo" className="size-8 rounded" />
+                                                <img src="/company_logos/tara.png" alt="Country Comps Logo" className="size-8 rounded" />
+                                                <img src="/company_logos/wepod.jpg" alt="Country Comps Logo" className="size-8 rounded" />
+                                                <img src="/company_logos/blubank.webp" alt="Country Comps Logo" className="size-8 rounded" />
                                                 </>
                                           )}    
                                     </div>
