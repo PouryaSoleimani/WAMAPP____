@@ -30,7 +30,7 @@ const CreditsCategorySingleBox: React.FC<CreditsCategorySingleBoxProps> = ({ car
                               borderRadius: 2,
                               color: selectedCard === index ? "var(--text-primary)" : "var(--text-primary)", 
                               transition: "background-color 0.3s ease",
-                              "&:hover": { backgroundColor: selectedCard === index ? "var(--inner-box-hover)" : "var(--home-bg)" }
+                              "&:hover": { backgroundColor: selectedCard === index ? "var(--inner-box-hover)" : "var(--inner-box-hover)" }
                         }}>
                         <CardContent sx={{ height: "100%", display: "flex", flexDirection: "column", gap: "16px",padding : "10px", justifyContent: "space-between", alignItems: "center" }}>
                               <div id="TOP" className="flex items-center justify-between w-full">
