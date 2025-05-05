@@ -50,7 +50,6 @@ body {
   align-items: start;
   justify-content: center;
   min-height: 100vh;
-  background-color: var(--home-bg);
 }
 
 .GRID__PARENT {
