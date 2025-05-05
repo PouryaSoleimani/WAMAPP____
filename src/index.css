@@ -16,7 +16,9 @@
   --main : "#fff";
   --pink: #d70654;
   --home-bg: #7ba8c4;
-  --home-bg-hover : #5f97ba;
+  --inner-bg: #fafafa;
+  --inner-box-bg : #7ba8c4;
+  --inner-box-hover : #5f97ba;
   --header-button-bg: #fff;
   --header-button-2-text: #d70654;
   --gray: #dde2e5;
@@ -34,6 +36,10 @@
   --gray: #cecece;
   --pink: #d70654;
   --home-bg: #000;
+  --home-bg-hover : #202020;
+  --inner-bg: #000;
+  --inner-box-bg : #121212;
+  --inner-box-hover : #202020;
   --header-button-bg: #7ba8c4;
   --header-button-2-text: #d70654;
   --grid-box: #202020;

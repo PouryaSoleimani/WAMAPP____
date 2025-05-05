@@ -20,11 +20,18 @@ interface CreditsCategorySingleBoxProps {
 }
 const CreditsCategorySingleBox: React.FC<CreditsCategorySingleBoxProps> = ({ card, index, selectedCard, setSelectedCard, isShowVamapp, isShowCountryComps }) => {
       return (
-            <Card key={card.id} sx={{ width: "100%", height: "auto", margin: "10px 1.5px", borderRadius: 2, boxShadow: 2, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center",border : "none"}}>
+            <Card key={card.id} sx={{ width: "100%", height: "auto", margin: "10px 1.5px", borderRadius: "8px", boxShadow: 2, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center",border : "none"}}>
                   <CardActionArea
                         onClick={() => setSelectedCard(index)} 
                         data-active={selectedCard === index ? "" : undefined}
-                        sx={{ backgroundColor: selectedCard === index ? "var(--home-bg)" : "#cecece", height: "100%", borderRadius: 2, color: selectedCard === index ? "dark" : "text.primary", transition: "background-color 0.3s ease", "&:hover": { backgroundColor: selectedCard === index ? "var(--home-bg-hover)" : "var(--home-bg)" } }}>
+                        sx={{ 
+                              backgroundColor: selectedCard === index ? "var(--inner-box-hover)" : "var(--inner-box-bg)", 
+                              height: "100%", 
+                              borderRadius: 2,
+                              color: selectedCard === index ? "var(--text-primary)" : "var(--text-primary)", 
+                              transition: "background-color 0.3s ease",
+                              "&:hover": { backgroundColor: selectedCard === index ? "var(--inner-box-hover)" : "var(--home-bg)" }
+                        }}>
                         <CardContent sx={{ height: "100%", display: "flex", flexDirection: "column", gap: "16px",padding : "10px", justifyContent: "space-between", alignItems: "center" }}>
                               <div id="TOP" className="flex items-center justify-between w-full">
                                     {/* {React.createElement(card.icon, { style: { fontSize: "40px", backgroundColor: "#cccccc9d", padding: "3px", borderRadius: "8px" } })} */}
@@ -39,14 +46,14 @@ const CreditsCategorySingleBox: React.FC<CreditsCategorySingleBoxProps> = ({ car
                                                 <img src="/logo.png" alt="logo" className="w-12 h-4 ml-1" />
                                           )}
                                     </div>
-                                    <div className="mt-4 flex items-center justify-around">
+                                    <div className="mt-4 flex items-center justify-evenly">
                                           {isShowCountryComps === true && (
                                                 <>
-                                                <img src="/company_logos/digipay.png" alt="Country Comps Logo" className="size-8" />
-                                                <img src="/company_logos/snapppay.webp" alt="Country Comps Logo" className="size-8" />
-                                                <img src="/company_logos/tara.svg" alt="Country Comps Logo" className="size-8" />
-                                                <img src="/company_logos/wepod.jpg" alt="Country Comps Logo" className="size-8" />
-                                                <img src="/company_logos/blubank.webp" alt="Country Comps Logo" className="size-8" />
+                                                <img src="/company_logos/digipay.png" alt="Country Comps Logo" className="size-6" />
+                                                <img src="/company_logos/snapppay.jpg" alt="Country Comps Logo" className="size-6 rounded" />
+                                                <img src="/company_logos/tara.png" alt="Country Comps Logo" className="size-6 rounded" />
+                                                <img src="/company_logos/wepod.jpg" alt="Country Comps Logo" className="size-6 rounded" />
+                                                <img src="/company_logos/blubank.webp" alt="Country Comps Logo" className="size-6 rounded" />
                                                 </>
                                           )}    
                                     </div>
