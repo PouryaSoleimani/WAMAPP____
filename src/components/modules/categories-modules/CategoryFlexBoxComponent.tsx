@@ -41,7 +41,7 @@ const CategoryFlexBoxComponent: React.FC<CategoryFlexBoxComponentProps> = ({ tit
       <h2 className='w-full text-lg tracking-tighter py-1.5 font-black bg-[var(--grid-box)] absolute text-[var(--text-primary)] -bottom-1 z-10'>
         {title}
       </h2>
-      <div className='absolute inset-0 bg-[var(--flex-box)] opacity-30 rounded-lg'></div>
+      <div className='absolute inset-0 bg-[var(--flex-box)] opacity-15 rounded-lg'></div>
     </button>
   );
 };
