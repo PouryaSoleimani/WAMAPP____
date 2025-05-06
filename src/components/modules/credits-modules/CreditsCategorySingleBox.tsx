@@ -1,6 +1,7 @@
+import { FaInfoCircle } from "react-icons/fa"; 
 import { BiInfoCircle } from "react-icons/bi"; 
-import { Button, Card, CardActionArea, CardContent, Fade, Tooltip } from "@mui/material";
-import React from "react";
+import { Button, Card, CardActionArea, CardContent, Fade, IconButton, Tooltip } from "@mui/material";
+import React, { useState } from "react";
 import { Link } from "react-router";
 import { IconType } from 'react-icons';
 import ClickAwayListener from '@mui/material/ClickAwayListener';
@@ -24,12 +25,15 @@ interface CreditsCategorySingleBoxProps {
 
 
 const CreditsCategorySingleBox: React.FC<CreditsCategorySingleBoxProps> = ({ card, index, selectedCard, setSelectedCard }) => {
-      const [open, setOpen] = React.useState(false);
+      const [open, setOpen] = useState(false);
 
-      const handleTooltipClose = () => { setOpen(false); };
+      const handleTooltipToggle = () => {
+            setOpen(prev => !prev);
+          };
 
-      const handleTooltipOpen = () => { setOpen(true); };
-
+          const handleClickAway = () => {
+            setOpen(false);
+          };
       return (
             <Card key={card.id} 
                   sx={{ width: "100%", height:"auto" , margin: "10px 1.5px", borderRadius: "8px", boxShadow: 2, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "stretch", border: "none" }}>
@@ -48,35 +52,25 @@ const CreditsCategorySingleBox: React.FC<CreditsCategorySingleBoxProps> = ({ car
                         <CardContent sx={{ height: "100%", display: "flex", flexDirection: "column", padding:"8px"}}>
                               <div className="flex flex-col items-start justify-start gap-2 basis-[90%]">
                                     <div className="flex items-center justify-between w-full">
-                                          <h3 className="font-bold text-lg m-0 p-0">{card.title}
-                                          <ClickAwayListener onClickAway={handleTooltipClose}>
-                                                {/* <Tooltip 
-                                                      onClose={handleTooltipClose}
+                                          <div className="flex items-center justify-start w-full">
+                                          <h3 className="font-bold text-lg m-0 p-0">{card.title}</h3>
+                                          <ClickAwayListener onClickAway={handleClickAway}>
+                                                <Tooltip 
+                                                      onClose={() => setOpen(false)}
                                                       open={open}
                                                       disableFocusListener
                                                       disableHoverListener
+                                                      disableTouchListener
                                                       title={<p>{card.tooltipdesc}</p>} 
                                                       slots={{ transition: Fade }}
                                                       slotProps={{ popper: { disablePortal: true, modifiers: [{ name: 'offset', options: { offset: [0, -14], }, },], }, }}
-                                                > */}
-                                                      <Tooltip
-                                                            onClose={handleTooltipClose}
-                                                            open={open}
-                                                            disableFocusListener
-                                                            disableHoverListener
-                                                            disableTouchListener
-                                                            title="Add"
-                                                            slotProps={{
-                                                                  popper: {
-                                                                        disablePortal: true,
-                                                                  },
-                                                            }}
-                                                      >
-                                                      <Button variant="text" className="translate-x-4"><BiInfoCircle className="w-5 h-5" /></Button>
+                                                >
+                                                      <IconButton onClick={handleTooltipToggle}>
+                                                            <FaInfoCircle className="w-4 h-4"/>
+                                                      </IconButton>
                                                 </Tooltip>
                                           </ClickAwayListener>
-                                    </h3>
- 
+                                          </div>
                                           {React.createElement(card.icon, { className: "w-12 h-12 ml-2 translate-y-2 text-[var(--text-primary)]" })}
                                     </div>
                                     <p className="text-sm text-start w-[60%] h-[50px] text-[var(--text-secondary)]">{card.desc}</p>
