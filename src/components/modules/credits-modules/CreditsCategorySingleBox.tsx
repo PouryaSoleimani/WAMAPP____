@@ -2,8 +2,21 @@ import { Button, Card, CardActionArea, CardContent } from "@mui/material";
 import React from "react";
 import { Link } from "react-router";
 
-interface CardProps { id: number; title: string; desc: string; path: string; }
-interface CreditsCategorySingleBoxProps { card: CardProps; index: number; selectedCard: number; setSelectedCard: (index: number) => void;}
+import { IconType } from 'react-icons';
+
+interface CardProps { 
+  id: number; 
+  title: string; 
+  desc: string; 
+  path: string; 
+  icon: IconType
+}
+interface CreditsCategorySingleBoxProps { 
+  card: CardProps; 
+  index: number; 
+  selectedCard: number; 
+  setSelectedCard: (index: number) => void; 
+}
 
 
 
@@ -22,13 +35,17 @@ const CreditsCategorySingleBox: React.FC<CreditsCategorySingleBoxProps> = ({ car
                               "&:hover": { backgroundColor: selectedCard === index ? "var(--inner-box-hover)" : "var(--inner-box-hover)" },
                         }}
                   >
-                        <CardContent sx={{ height: "100%", display: "flex", flexDirection: "column", gap: "8px", padding: "8px", justifyContent: "start", alignContent: "space-between" }}>
-                              <div className="flex flex-col items-start justify-start gap-2">
+                        <CardContent sx={{ height: "100%", display: "flex", flexDirection: "column", padding:"8px"}}>
+                              <div className="flex flex-col items-start justify-start gap-2 basis-[90%]">
+                                    <div className="flex items-center justify-between w-full">
                                     <h3 className="font-bold text-lg ">{card.title}</h3>
-                                    <p className="text-sm text-start w-[80%] text-[var(--text-secondary)]">{card.desc}</p>
+                                    {React.createElement(card.icon, { className: "w-12 h-12 ml-2 translate-y-2 text-[var(--text-primary)]" })}
+                                    </div>
+                                    <p className="text-sm text-start w-[60%] text-[var(--text-secondary)]">{card.desc}</p>
+
                               </div>
 
-                              <div className="flex w-full items-center justify-end">
+                              <div className="flex w-full items-center justify-end basis-[10%]">
                                     <Button component={Link} color="primary" variant="contained" to={card.path}
                                           sx={{ textDecoration: "none", padding: "4px 10px", letterSpacing: "-0.5px", fontWeight: "600", fontFamily: "Vazir" }}
                                     >
