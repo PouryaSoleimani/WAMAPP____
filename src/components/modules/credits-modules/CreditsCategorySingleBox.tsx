@@ -23,7 +23,7 @@ interface CreditsCategorySingleBoxProps {
 const CreditsCategorySingleBox: React.FC<CreditsCategorySingleBoxProps> = ({ card, index, selectedCard, setSelectedCard }) => {
       return (
             <Card key={card.id} 
-                  sx={{ width: "100%", height: "20vh", margin: "10px 1.5px", borderRadius: "8px", boxShadow: 2, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "stretch", border: "none" }}>
+                  sx={{ width: "100%", height: "25%", margin: "10px 1.5px", borderRadius: "8px", boxShadow: 2, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "stretch", border: "none" }}>
                   <CardActionArea
                         onClick={() => setSelectedCard(index)}
                         data-active={selectedCard === index ? "" : undefined}
