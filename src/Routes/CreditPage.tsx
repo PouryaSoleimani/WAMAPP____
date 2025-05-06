@@ -1,7 +1,6 @@
 import CreditsCategoryBox from "../components/modules/credits-modules/CreditsCategoryBoxWrapper"
 import NavBarComponent from "../components/templates/NavBarComponent"
 import HeaderTitleComponent from "../components/modules/header-modules/HeaderTitleComponent"
-import FooterComponent from "../components/templates/FooterComponent"
 
 
 const CreditPage = () => {
@@ -12,7 +11,6 @@ const CreditPage = () => {
         <HeaderTitleComponent title="لیست وام دهندگان" />
           <CreditsCategoryBox />
       </section>
-      <FooterComponent />
     </>
   )
 }
