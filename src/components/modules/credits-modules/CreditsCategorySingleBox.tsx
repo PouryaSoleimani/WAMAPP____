@@ -31,7 +31,7 @@ const CreditsCategorySingleBox: React.FC<CreditsCategorySingleBoxProps> = ({ car
 
       return (
             <Card key={card.id} 
-                  sx={{ width: "100%", height:"52%" , margin: "5px 1.5px", borderRadius: "8px", boxShadow: 2, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "stretch", border: "none" }}>
+                  sx={{ width: "100%", height:"50%" , margin: "5px 1.5px", borderRadius: "8px", boxShadow: 2, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "stretch", border: "none" }}>
                   <CardActionArea
                         onClick={() => setSelectedCard(index)}
                         data-active={selectedCard === index ? "" : undefined}
