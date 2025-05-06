@@ -1,8 +1,9 @@
-import { Button, Card, CardActionArea, CardContent } from "@mui/material";
+import { BiInfoCircle } from "react-icons/bi"; 
+import { Button, Card, CardActionArea, CardContent, Fade, Tooltip } from "@mui/material";
 import React from "react";
 import { Link } from "react-router";
-
 import { IconType } from 'react-icons';
+
 
 interface CardProps {
       id: number;
@@ -39,7 +40,16 @@ const CreditsCategorySingleBox: React.FC<CreditsCategorySingleBoxProps> = ({ car
                         <CardContent sx={{ height: "100%", display: "flex", flexDirection: "column", padding:"8px"}}>
                               <div className="flex flex-col items-start justify-start gap-2 basis-[90%]">
                                     <div className="flex items-center justify-between w-full">
-                                    <h3 className="font-bold text-lg ">{card.title}</h3>
+                                          <h3 className="font-bold text-lg m-0 p-0">{card.title}
+                                                <Tooltip 
+                                                      title="اطلاعات بیشتر" 
+                                                      slots={{ transition: Fade }}
+                                                      slotProps={{ transition: { timeout: 600 }, }} 
+                                                >
+                                                      <Button variant="text" className="translate-x-4"><BiInfoCircle className="w-5 h-5" /></Button>
+                                                </Tooltip>
+                                    </h3>
+ 
                                           {React.createElement(card.icon, { className: "w-12 h-12 ml-2 translate-y-2 text-[var(--text-primary)]" })}
                                     </div>
                                     <p className="text-sm text-start w-[60%] h-[50px] text-[var(--text-secondary)]">{card.desc}</p>
