@@ -54,6 +54,7 @@
 html, body {
   height: 100vh;
   margin: 0;
+  background-color: var(--main);
 }
 
 .GRID__PARENT {
