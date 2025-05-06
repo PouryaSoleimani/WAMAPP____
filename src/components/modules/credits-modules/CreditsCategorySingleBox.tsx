@@ -1,5 +1,4 @@
 import { FaInfoCircle } from "react-icons/fa"; 
-import { BiInfoCircle } from "react-icons/bi"; 
 import { Button, Card, CardActionArea, CardContent, Fade, IconButton, Tooltip } from "@mui/material";
 import React, { useState } from "react";
 import { Link } from "react-router";
@@ -27,13 +26,9 @@ interface CreditsCategorySingleBoxProps {
 const CreditsCategorySingleBox: React.FC<CreditsCategorySingleBoxProps> = ({ card, index, selectedCard, setSelectedCard }) => {
       const [open, setOpen] = useState(false);
 
-      const handleTooltipToggle = () => {
-            setOpen(prev => !prev);
-          };
+      const handleTooltipToggle = () => { setOpen(prev => !prev) };
+      const handleClickAway = () => { setOpen(false) };
 
-          const handleClickAway = () => {
-            setOpen(false);
-          };
       return (
             <Card key={card.id} 
                   sx={{ width: "100%", height:"auto" , margin: "10px 1.5px", borderRadius: "8px", boxShadow: 2, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "stretch", border: "none" }}>
@@ -41,12 +36,8 @@ const CreditsCategorySingleBox: React.FC<CreditsCategorySingleBoxProps> = ({ car
                         onClick={() => setSelectedCard(index)}
                         data-active={selectedCard === index ? "" : undefined}
                         sx={{
-                              backgroundColor: selectedCard === index ? "var(--inner-box-hover)" : "var(--inner-box-bg)",
-                              height: "100%",
-                              borderRadius: 2,
-                              color: selectedCard === index ? "var(--text-primary)" : "var(--text-primary)",
-                              transition: "background-color 0.3s ease",
-                              "&:hover": { backgroundColor: selectedCard === index ? "var(--inner-box-hover)" : "var(--inner-box-hover)" },
+                              backgroundColor: selectedCard === index ? "var(--inner-box-hover)" : "var(--inner-box-bg)", height: "100%", borderRadius: 2, color: selectedCard === index ? "var(--text-primary)" : "var(--text-primary)",
+                              transition: "background-color 0.3s ease","&:hover": { backgroundColor: selectedCard === index ? "var(--inner-box-hover)" : "var(--inner-box-hover)" },
                         }}
                   >
                         <CardContent sx={{ height: "100%", display: "flex", flexDirection: "column", padding:"8px"}}>
