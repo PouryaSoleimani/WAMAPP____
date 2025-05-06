@@ -1,5 +1,5 @@
 import { BiInfoCircle } from "react-icons/bi"; 
-import { Button, Card, CardActionArea, CardContent, Fade, Tooltip } from "@mui/material";
+import { Button, Card, CardActionArea, CardContent, Tooltip, Zoom } from "@mui/material";
 import React from "react";
 import { Link } from "react-router";
 import { IconType } from 'react-icons';
@@ -9,8 +9,10 @@ interface CardProps {
       id: number;
       title: string;
       desc: string;
+      tooltip: string;
       path: string;
       icon: IconType
+      tooltipdesc: string
 }
 interface CreditsCategorySingleBoxProps {
       card: CardProps;
@@ -22,6 +24,12 @@ interface CreditsCategorySingleBoxProps {
 
 
 const CreditsCategorySingleBox: React.FC<CreditsCategorySingleBoxProps> = ({ card, index, selectedCard, setSelectedCard }) => {
+      const [open, setOpen] = React.useState(false);
+
+      const handleTooltipClose = () => { setOpen(false); };
+
+      const handleTooltipOpen = () => { setOpen(true); };
+
       return (
             <Card key={card.id} 
                   sx={{ width: "100%", height:"auto" , margin: "10px 1.5px", borderRadius: "8px", boxShadow: 2, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "stretch", border: "none" }}>
@@ -42,9 +50,16 @@ const CreditsCategorySingleBox: React.FC<CreditsCategorySingleBoxProps> = ({ car
                                     <div className="flex items-center justify-between w-full">
                                           <h3 className="font-bold text-lg m-0 p-0">{card.title}
                                                 <Tooltip 
-                                                      title="اطلاعات بیشتر" 
-                                                      slots={{ transition: Fade }}
-                                                      slotProps={{ transition: { timeout: 600 }, }} 
+                                                      open={open} onClose={handleTooltipClose} onOpen={handleTooltipOpen}     
+                                                      enterDelay={50}
+                                                      enterTouchDelay={50}
+                                                      leaveDelay={50}
+                                                      leaveTouchDelay={50}
+                                                      title={<p>{card.tooltipdesc}</p>} 
+                                                      slots={{ transition: Zoom }}
+                                                      slotProps={{ transition: { timeout: 600 },             
+                                                            popper: { disablePortal: true, modifiers: [{ name: 'offset', options: { offset: [0, -14], }, },], },
+                                                       }}
                                                 >
                                                       <Button variant="text" className="translate-x-4"><BiInfoCircle className="w-5 h-5" /></Button>
                                                 </Tooltip>
