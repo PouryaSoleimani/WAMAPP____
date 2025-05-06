@@ -9,6 +9,7 @@ const CreditPage = () => {
     <>
       <NavBarComponent />
       <section className="mx-auto relative inset-0 text-center z-10 mt-[54px] p-2 bg-[var(--inner-bg)] h-[90vh]" dir="rtl">
+        <span className="block mt-2">{""}</span>
         <HeaderTitleComponent title="لیست وام دهندگان" />
           <CreditsCategoryBox />
           <BottomNavBarComponent/>
