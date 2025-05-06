@@ -55,9 +55,10 @@ const CreditsCategorySingleBox: React.FC<CreditsCategorySingleBoxProps> = ({ car
                                                       title={<p>{card.tooltipdesc}</p>} 
                                                       slots={{ transition: Fade }}
                                                       slotProps={{ popper: { disablePortal: true, modifiers: [{ name: 'offset', options: { offset: [0, -14], }, },], }, }}
+                                                      sx={{ '& .MuiTooltip-popupIndicator': {color: 'var(--text-primary)', }, }}
                                                 >
                                                       <IconButton onClick={handleTooltipToggle}>
-                                                            <FaInfoCircle className="w-4 h-4"/>
+                                                            <FaInfoCircle className="w-4 h-4 text-[var(--text-primary)]"/>
                                                       </IconButton>
                                                 </Tooltip>
                                           </ClickAwayListener>
