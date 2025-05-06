@@ -18,6 +18,7 @@ export default function BottomNavBarComponent() {
     <Box sx={{ pb: 0 , margin:0 }} ref={ref} flexDirection="row-reverse">
       <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }} elevation={3}>
         <BottomNavigation
+          sx={{ width: '100%' , display: 'flex' , justifyContent: 'center' , alignItems: 'center'  }}
           showLabels
           value={value}
           onChange={(_event: React.SyntheticEvent<Element, Event>, newValue) => { setValue(newValue); }}
