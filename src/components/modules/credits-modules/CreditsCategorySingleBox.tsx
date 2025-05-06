@@ -23,7 +23,7 @@ interface CreditsCategorySingleBoxProps {
 const CreditsCategorySingleBox: React.FC<CreditsCategorySingleBoxProps> = ({ card, index, selectedCard, setSelectedCard }) => {
       return (
             <Card key={card.id} 
-                  sx={{ width: "100%", height: "33%", margin: "10px 1.5px", borderRadius: "8px", boxShadow: 2, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "stretch", border: "none" }}>
+                  sx={{ width: "100%", height:"30%" , margin: "10px 1.5px", borderRadius: "8px", boxShadow: 2, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "stretch", border: "none" }}>
                   <CardActionArea
                         onClick={() => setSelectedCard(index)}
                         data-active={selectedCard === index ? "" : undefined}
@@ -42,7 +42,7 @@ const CreditsCategorySingleBox: React.FC<CreditsCategorySingleBoxProps> = ({ car
                                     <h3 className="font-bold text-lg ">{card.title}</h3>
                                           {React.createElement(card.icon, { className: "w-12 h-12 ml-2 translate-y-2 text-[var(--text-primary)]" })}
                                     </div>
-                                    <p className="text-sm text-start w-[60%] text-[var(--text-secondary)]">{card.desc}</p>
+                                    <p className="text-sm text-start w-[60%] h-[12.5vh] text-[var(--text-secondary)]">{card.desc}</p>
                               </div>
 
                               <div className="flex w-full items-center justify-end basis-[10%]">
