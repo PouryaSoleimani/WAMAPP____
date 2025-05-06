@@ -1,9 +1,9 @@
 import NavBarComponent from '../components/templates/NavBarComponent'
-import FooterComponent from '../components/templates/FooterComponent'
 import HeaderTitleComponent from '../components/modules/header-modules/HeaderTitleComponent'
 import FilterDropDownCities from '../components/modules/special-loans-modules/FilterDropDownCities'
 import FilterDropDownSubjects from '../components/modules/special-loans-modules/FilterDropDownSubject'
 import FilterDropDownGuarantee from '../components/modules/special-loans-modules/FilterDropDownGuarantee'
+import BottomNavBarComponent from '../components/modules/bottom-navbar/BottomNavbarComponent'
 
 const SpecialLoansPage = () => {
   return (
@@ -15,7 +15,7 @@ const SpecialLoansPage = () => {
         <FilterDropDownSubjects/>
         <FilterDropDownGuarantee/>
       </section>
-      <FooterComponent />
+      <BottomNavBarComponent/>
     </>
   )
 }
