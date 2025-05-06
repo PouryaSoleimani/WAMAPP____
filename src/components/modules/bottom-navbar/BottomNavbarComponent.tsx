@@ -15,19 +15,19 @@ export default function BottomNavBarComponent() {
 
 
   return (
-    <Box sx={{ pb: 0 , margin:"8px 0 0 0" }} ref={ref}>
-      <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }} elevation={3}>
+    <Box sx={{ pb: 0 , margin:"2px 0 0 0" }} ref={ref}>
+      <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0  }} elevation={3}>
         <BottomNavigation
-          sx={{ width: '100%' , display: 'flex' , justifyContent: 'center' , alignItems: 'center'  }}
+          sx={{ width: '100%' , display: 'flex' , justifyContent: 'center' , alignItems: 'center', backgroundColor: "var(--inner-bg)", color: "var(--text-primary)"  }}
           showLabels
           value={value}
           onChange={(_event: React.SyntheticEvent<Element, Event>, newValue) => { setValue(newValue); }}
         >
-         <BottomNavigationAction icon={<BiLogOut className="w-6 h-6" />} />
-          <BottomNavigationAction  icon={<BiUser className="w-6 h-6"/>} />
-          <BottomNavigationAction  icon={<BiStar className="w-6 h-6"/>} />
-          <BottomNavigationAction icon={<BiSearch  className="w-6 h-6" />} />
-          <BottomNavigationAction component={Link} to="/"  icon={<BiHome className="w-6 h-6" />} />
+          <BottomNavigationAction icon={<BiLogOut className="w-6 h-6 text-[var(--text-primary)]" />} />
+          <BottomNavigationAction  icon={<BiUser className="w-6 h-6 text-[var(--text-primary)]"/>} />
+          <BottomNavigationAction  icon={<BiStar className="w-6 h-6 text-[var(--text-primary)]"/>} />
+          <BottomNavigationAction icon={<BiSearch  className="w-6 h-6 text-[var(--text-primary)]" />} />
+          <BottomNavigationAction component={Link} to="/"  icon={<BiHome className="w-6 h-6 text-[var(--text-primary)]" />} />
         </BottomNavigation>
       </Paper>
     </Box>
