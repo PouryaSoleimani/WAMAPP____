@@ -32,9 +32,9 @@ const FilterDropDownCities = () => {
         margin: '16px 0',
         boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
         direction: 'rtl', 
-        '& .MuiOutlinedInput-root': { padding: '8px', fontSize: '14px', fontFamily: 'Vazir', color: 'var(--text-primary)', border: 'none', outline: 'none', },
+        '& .MuiOutlinedInput-root': { padding: '8px', fontSize: '16px', fontFamily: 'Vazir', color: 'var(--text-primary)', border: 'none', outline: 'none', },
         '& .MuiOutlinedInput-notchedOutline': { border: 'none', },
-        '& .MuiInputLabel-root': { fontSize: '14px', fontFamily: 'Vazir', color: 'var(--text-secondary)', },
+        '& .MuiInputLabel-root': { fontSize: '16px', fontFamily: 'Vazir', color: 'var(--text-secondary)', },
         '& .MuiAutocomplete-popupIndicator': { color: 'var(--text-primary)', },
       }}
       renderInput={(params) => (
