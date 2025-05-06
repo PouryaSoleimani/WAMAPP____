@@ -42,7 +42,7 @@ const CreditsCategorySingleBox: React.FC<CreditsCategorySingleBoxProps> = ({ car
                                     <h3 className="font-bold text-lg ">{card.title}</h3>
                                           {React.createElement(card.icon, { className: "w-12 h-12 ml-2 translate-y-2 text-[var(--text-primary)]" })}
                                     </div>
-                                    <p className="text-sm text-start w-[60%] h-[14vh] text-[var(--text-secondary)]">{card.desc}</p>
+                                    <p className="text-sm text-start w-[60%] h-[10vh] text-[var(--text-secondary)]">{card.desc}</p>
                               </div>
 
                               <div className="flex w-full items-center justify-end basis-[10%]">
