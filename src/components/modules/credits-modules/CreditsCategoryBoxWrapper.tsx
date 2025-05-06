@@ -13,7 +13,7 @@ const CreditsCategoryBoxWrapper = () => {
   ];
 
   return (
-    <div className="flex flex-col h-[75dvh] gap-y-6 p-0.5 mt-3">
+    <div className="flex flex-col h-[75dvh] gap-y-4 p-0.5 mt-3">
       {cards.map((card, index) => (
         <CreditsCategorySingleBox key={card.id} card={card} index={index} selectedCard={selectedCard} setSelectedCard={setSelectedCard} />
       ))}
