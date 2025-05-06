@@ -15,7 +15,7 @@ export default function BottomNavBarComponent() {
 
 
   return (
-    <Box sx={{ pb: 0 , margin:0 }} ref={ref} flexDirection="row-reverse">
+    <Box sx={{ pb: 0 , margin:"8px 0 0 0" }} ref={ref}>
       <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }} elevation={3}>
         <BottomNavigation
           sx={{ width: '100%' , display: 'flex' , justifyContent: 'center' , alignItems: 'center'  }}
