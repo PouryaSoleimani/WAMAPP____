@@ -1,4 +1,3 @@
-import { FaChevronLeft } from "react-icons/fa";
 import { Button, Card, CardActionArea, CardContent } from "@mui/material";
 import React from "react";
 import { Link } from "react-router";
