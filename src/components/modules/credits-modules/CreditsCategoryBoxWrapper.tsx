@@ -11,9 +11,9 @@ const CreditsCategoryBoxWrapper = () => {
     { id: 2, title: 'معرفی وام های کشوری', desc: "شرکت های معتبر وام دهی در کشور", isShowCountryComps: true, path: "/national-loans", icon :RiGlobalLine, tooltipdesc:"وام های کشوری", tooltip:"وام های کشوری" },
     { id: 3, title: '  معرفی وام های استانی', desc: "وام دهندگان محلی در استان شما", isShowCountryComps: false, path: "/regional-loans", icon: BiHome, tooltipdesc:"وام های استانی", tooltip:"وام های استانی" },
   ];
-  
+
   return (
-    <div className="flex flex-col flex-wrap justify-center gap-y-10 p-0.5 mt-5">
+    <div className="flex flex-col flex-wrap justify-center gap-y-6 p-0.5 mt-5">
       {cards.map((card, index) => (
         <CreditsCategorySingleBox key={card.id} card={card} index={index} selectedCard={selectedCard} setSelectedCard={setSelectedCard} />
       ))}
