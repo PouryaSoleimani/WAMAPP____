@@ -1,9 +1,9 @@
 import { BiInfoCircle } from "react-icons/bi"; 
-import { Button, Card, CardActionArea, CardContent, Tooltip, Zoom } from "@mui/material";
+import { Button, Card, CardActionArea, CardContent, Fade, Tooltip } from "@mui/material";
 import React from "react";
 import { Link } from "react-router";
 import { IconType } from 'react-icons';
-
+import ClickAwayListener from '@mui/material/ClickAwayListener';
 
 interface CardProps {
       id: number;
@@ -49,20 +49,32 @@ const CreditsCategorySingleBox: React.FC<CreditsCategorySingleBoxProps> = ({ car
                               <div className="flex flex-col items-start justify-start gap-2 basis-[90%]">
                                     <div className="flex items-center justify-between w-full">
                                           <h3 className="font-bold text-lg m-0 p-0">{card.title}
-                                                <Tooltip 
-                                                      open={open} onClose={handleTooltipClose} onOpen={handleTooltipOpen}     
-                                                      enterDelay={50}
-                                                      enterTouchDelay={50}
-                                                      leaveDelay={50}
-                                                      leaveTouchDelay={50}
+                                          <ClickAwayListener onClickAway={handleTooltipClose}>
+                                                {/* <Tooltip 
+                                                      onClose={handleTooltipClose}
+                                                      open={open}
+                                                      disableFocusListener
+                                                      disableHoverListener
                                                       title={<p>{card.tooltipdesc}</p>} 
-                                                      slots={{ transition: Zoom }}
-                                                      slotProps={{ transition: { timeout: 600 },             
-                                                            popper: { disablePortal: true, modifiers: [{ name: 'offset', options: { offset: [0, -14], }, },], },
-                                                       }}
-                                                >
+                                                      slots={{ transition: Fade }}
+                                                      slotProps={{ popper: { disablePortal: true, modifiers: [{ name: 'offset', options: { offset: [0, -14], }, },], }, }}
+                                                > */}
+                                                      <Tooltip
+                                                            onClose={handleTooltipClose}
+                                                            open={open}
+                                                            disableFocusListener
+                                                            disableHoverListener
+                                                            disableTouchListener
+                                                            title="Add"
+                                                            slotProps={{
+                                                                  popper: {
+                                                                        disablePortal: true,
+                                                                  },
+                                                            }}
+                                                      >
                                                       <Button variant="text" className="translate-x-4"><BiInfoCircle className="w-5 h-5" /></Button>
                                                 </Tooltip>
+                                          </ClickAwayListener>
                                     </h3>
  
                                           {React.createElement(card.icon, { className: "w-12 h-12 ml-2 translate-y-2 text-[var(--text-primary)]" })}
