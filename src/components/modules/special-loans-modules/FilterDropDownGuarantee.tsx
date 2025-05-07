@@ -25,6 +25,7 @@ const FilterDropDownGuarantee = () => {
 				borderRadius: '10px',
 				boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
 				direction: 'rtl',
+				padding: 0,
 				'& .MuiOutlinedInput-root': {
 					fontSize: '16px',
 					fontFamily: 'Vazir',
@@ -59,9 +60,11 @@ const FilterDropDownGuarantee = () => {
 						fontFamily: 'Vazir',
 						fontSize: '16px',
 						direction: 'rtl',
+						width: '100%',
+						height: '100%',
 						'& .MuiAutocomplete-option': {
 							'&:hover': { backgroundColor: 'var(--inner-box-hover)' },
-							padding: '8px',
+							padding: '0 12px',
 							border: 'none',
 							outline: 'none',
 						}
