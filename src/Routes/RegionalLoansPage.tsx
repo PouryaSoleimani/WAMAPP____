@@ -22,7 +22,7 @@ import RegionalLoansHeaderLogos from '../components/modules/regional-loans-modul
 const RegionalLoansPage = () => {
     const [selectedCard, setSelectedCard] = React.useState(0)
   return (
-    <section className="h-dvh bg-[var(--inner-bg)]">
+    <section className="bg-[var(--inner-bg)]">
     <NavBarComponent />
     <div className="mx-auto relative inset-0 text-center z-10 mt-[54px] p-2 " dir="rtl">
         <HeaderTitleComponent title="وام های استانی" />

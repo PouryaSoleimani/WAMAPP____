@@ -18,7 +18,7 @@ export default function BottomNavBarComponent() {
     <Box sx={{ pb: 0 , margin:"2px 0 0 0" }} ref={ref}>
       <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0  }} elevation={3}>
         <BottomNavigation
-          sx={{ width: '100%' , display: 'flex' , justifyContent: 'center' , alignItems: 'center', backgroundColor: "var(--inner-bg)", color: "var(--text-primary)"  }}
+          sx={{ width: '100%' , display: 'flex' , justifyContent: 'center' , alignItems: 'center', backgroundColor: "var(--main)", color: "var(--text-primary)"  }}
           showLabels
           value={value}
           onChange={(_event: React.SyntheticEvent<Element, Event>, newValue) => { setValue(newValue); }}
