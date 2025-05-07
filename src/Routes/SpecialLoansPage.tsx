@@ -24,21 +24,21 @@ const SpecialLoansPage = () => {
 
 
   return (
-		<>
+		<section className="h-dvh bg-[var(--inner-bg)]">
 			<NavBarComponent />
-			<section className="mx-auto relative inset-0 text-center z-10 mt-[54px] p-2 bg-[var(--inner-bg)]" dir="rtl">
+			<div className="mx-auto relative inset-0 text-center z-10 mt-[54px] p-2 " dir="rtl">
 				<HeaderTitleComponent title="وام های تخصصی" />
 				<FilterDropDownCities />
 				<FilterDropDownSubjects />
 				<FilterDropDownGuarantee />
-			</section>
-			<section className='px-3 mb-12 h-dvh bg-[var(--inner-bg)]'>
+			</div>
+			<div className='px-3 mb-12 h-dvh'>
 				{cards.map((card, index) => (
 					<SpecialLoanSingleBox key={card.id} card={card} index={index} selectedCard={selectedCard} setSelectedCard={setSelectedCard} />
 				))}
-			</section>
+			</div>
 			<BottomNavBarComponent />
-		</>
+		</section>
 	)
 }
 
