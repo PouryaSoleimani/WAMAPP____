@@ -8,7 +8,7 @@ const CreditPage = () => {
   return (
     <section className="flex flex-col h-screen w-full bg-[var(--inner-bg)]">
       <NavBarComponent />
-      <div className="mx-auto relative inset-0 text-center z-10 mt-[54px] p-2 h-[90vh]" dir="rtl">
+      <div className="relative inset-0 text-center z-10 mt-[54px] p-2 h-[90vh]" dir="rtl">
         <span className="block mt-2">{""}</span>
         <HeaderTitleComponent title="لیست وام دهندگان" />
           <CreditsCategoryBox />

@@ -34,10 +34,10 @@ const CreditsCategorySingleBox: React.FC<CreditsCategorySingleBoxProps> = ({ car
 					key={card.id}
 					sx={{
 						width: '100%',
-						height: '23.5%',
+						height: '27%',
 						gap: '10px',
 						margin: '5px 1.5px',
-						borderRadius: 2,
+						borderRadius: "10px",
 						boxShadow: 2,
 						display: 'flex',
 						flexDirection: 'column',
@@ -70,7 +70,7 @@ const CreditsCategorySingleBox: React.FC<CreditsCategorySingleBoxProps> = ({ car
 									</div>
 									{React.createElement(card.icon, { className: 'w-12 h-12 ml-2 translate-y-2 text-[var(--text-primary)]' })}
 								</div>
-								<p className="text-xs font-semibold text-start w-[60%] text-[var(--text-secondary)]">{card.desc}</p>
+								<p className="text-sm font-bold tracking text-start w-[60%] text-[var(--text-secondary)]">{card.desc}</p>
 							</div>
 
 							<div className="flex w-full items-center justify-end basis-[10%]">
