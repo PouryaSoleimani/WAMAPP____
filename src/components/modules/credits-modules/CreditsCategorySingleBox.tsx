@@ -34,10 +34,10 @@ const CreditsCategorySingleBox: React.FC<CreditsCategorySingleBoxProps> = ({ car
 					key={card.id}
 					sx={{
 						width: '100%',
-						height: '24%',
+						height: '23.5%',
 						gap: '10px',
 						margin: '5px 1.5px',
-						borderRadius: '8px',
+						borderRadius: 2,
 						boxShadow: 2,
 						display: 'flex',
 						flexDirection: 'column',
@@ -51,7 +51,6 @@ const CreditsCategorySingleBox: React.FC<CreditsCategorySingleBoxProps> = ({ car
 						sx={{
 							backgroundColor: selectedCard === index ? 'var(--inner-box-hover)' : 'var(--inner-box-bg)',
 							height: '100%',
-							borderRadius: 2,
 							color: selectedCard === index ? 'var(--text-primary)' : 'var(--text-primary)',
 							transition: 'background-color 0.3s ease',
 							'&:hover': { backgroundColor: selectedCard === index ? 'var(--inner-box-hover)' : 'var(--inner-box-hover)' }
@@ -60,27 +59,18 @@ const CreditsCategorySingleBox: React.FC<CreditsCategorySingleBoxProps> = ({ car
 							<div className="flex flex-col items-start justify-start gap-2 basis-[90%]">
 								<div className="flex items-center justify-between w-full">
 									<div className="flex items-center justify-start w-full">
-										<h3 className="font-bold text-lg m-0 p-0">{card.title}</h3>
+										<h3 className="font-extrabold text-lg m-0 p-0">{card.title}</h3>
 										<ClickAwayListener onClickAway={handleClickAway}>
-											<Tooltip
-												onClose={() => setOpen(false)}
-												open={open}
-												disableFocusListener
-												disableHoverListener
-												disableTouchListener
-												title={<p>{card.tooltipdesc}</p>}
-												slots={{ transition: Fade }}
-												slotProps={{ popper: { disablePortal: true, modifiers: [{ name: 'offset', options: { offset: [0, -14] } }] } }}
-												sx={{ '& .MuiTooltip-popupIndicator': { color: 'var(--text-primary)' } }}>
+									  <Tooltip onClose={() => setOpen(false)} open={open} disableFocusListener disableHoverListener disableTouchListener title={<p>{card.tooltipdesc}</p>} slots={{ transition: Fade }} slotProps={{ popper: { disablePortal: true, modifiers: [{ name: 'offset', options: { offset: [0, -14] } }] } }} sx={{ '& .MuiTooltip-popupIndicator': { color: 'var(--text-secondary)' } }}>
 												<IconButton>
-													<FaInfoCircle onClick={handleTooltipToggle} className="w-4 h-4 text-[var(--text-primary)]" />
+													<FaInfoCircle onClick={handleTooltipToggle} className="w-4 h-4 text-[var(--text-secondary)]" />
 												</IconButton>
 											</Tooltip>
 										</ClickAwayListener>
 									</div>
 									{React.createElement(card.icon, { className: 'w-12 h-12 ml-2 translate-y-2 text-[var(--text-primary)]' })}
 								</div>
-								<p className="text-sm text-start w-[60%] text-[var(--text-secondary)]">{card.desc}</p>
+								<p className="text-xs font-semibold text-start w-[60%] text-[var(--text-secondary)]">{card.desc}</p>
 							</div>
 
 							<div className="flex w-full items-center justify-end basis-[10%]">
