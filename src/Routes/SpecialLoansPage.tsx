@@ -32,7 +32,7 @@ const SpecialLoansPage = () => {
 				<FilterDropDownSubjects />
 				<FilterDropDownGuarantee />
 			</div>
-			<div className='px-3 mb-12 h-dvh'>
+			<div className='px-4 mt-2 flex flex-col gap-2'>
 				{cards.map((card, index) => (
 					<SpecialLoanSingleBox key={card.id} card={card} index={index} selectedCard={selectedCard} setSelectedCard={setSelectedCard} />
 				))}

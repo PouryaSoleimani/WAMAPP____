@@ -40,10 +40,11 @@
   --home-bg-hover : #202020;
   --inner-bg: #000;
   --inner-box-bg : #121212;
+  --gray: #2b2b2b;
   --inner-box-hover : #222222;
   --header-button-bg: #7ba8c4;
   --header-button-2-text: #d70654;
-  --grid-box: #202020;
+  --grid-box: #121212;
   --grid-box-hover: #dde2e5;
   --flex-box: #3f3e3ef3;
   --text-primary: #fff;

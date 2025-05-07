@@ -19,48 +19,25 @@ const SpecialLoanSingleBox: React.FC<SpecialLoanSingleBoxProps> = ({ card, index
 	return (
 		<Card
 			key={card.id}
-			sx={{
-				width: '100%',
-				height: 'auto',
-				margin: '10px 1.5px',
-				borderRadius: '8px',
-				boxShadow: 2,
-				display: 'flex',
-				flexDirection: 'column',
-				justifyContent: 'center',
-				alignItems: 'center',
-				border: 'none'
-			}}>
+			sx={{ width: '100%', height: 'auto', margin: '10px 1.5px', borderRadius: "10px", boxShadow: 2, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', border: 'none', color: "var(--text-primary)"}}
+		>
 			<CardActionArea
 				onClick={() => setSelectedCard(index)}
 				data-active={selectedCard === index ? '' : undefined}
-				sx={{
-					backgroundColor: selectedCard === index ? 'var(--inner-box-hover)' : 'var(--main)',
-					height: '100%',
-					borderRadius: 1,
-					color: selectedCard === index ? 'var(--black)' : 'var(--text-primary)',
-					transition: 'background-color 0.3s ease',
-					'&:hover': { backgroundColor: selectedCard === index ? 'var(--inner-box-hover)' : 'var(--inner-box-hover)' }
-				}}>
+				sx={{ backgroundColor: selectedCard === index ? 'var(--inner-box-hover)' : 'var(--grid-box)', height: '100%', borderRadius: 2, color: selectedCard === index ? 'var(--text-primary)' : 'var(--text-primary)', transition: 'background-color 0.3s ease', '&:hover': { backgroundColor: selectedCard === index ? 'var(--inner-box-hover)' : 'var(--inner-box-hover)' } }}
+			>
 				<CardContent
-					sx={{
-						height: '100%',
-						display: 'flex',
-						flexDirection: 'column',
-						gap: '10px',
-						padding: '18px',
-						justifyContent: 'space-between',
-						alignItems: 'center'
-					}}>
+					sx={{ height: '100%', display: 'flex', flexDirection: 'column', gap: '15px', padding: '16px', justifyContent: 'space-between', alignItems: 'center' }}>
 					<div id="TOP" className="flex items-center justify-between w-full">
-					<BsRocketTakeoffFill className="w-6 h-6"/>
+					<BsRocketTakeoffFill className="w-10 h-10 bg-[var(--gray)]  p-1 rounded-md"/>
 						<h3 className="font-bold flex items-center gap-3 text-lg ">{card.title}</h3>
 						<FaChevronLeft />
 					</div>
 
 					<div className="flex flex-col items-stretch justify-between w-full ">
 						<div className="flex w-full items-center justify-between gap-4 text-justify"></div>
-						<div className="flex w-full items-center justify-center bg-[var(--gray)] py-1  rounded-md mt-4 ">
+						<div className="flex w-full items-center justify-between px-2 bg-[var(--gray)] py-1.5  rounded-md mt-4 ">
+							<p>با اعتبار سنجی</p>
 							<p>1 تا 10 میلیون تومان</p>
 						</div>
 					</div>
