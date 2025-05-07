@@ -19,7 +19,7 @@ const SpecialLoanSingleBox: React.FC<SpecialLoanSingleBoxProps> = ({ card, index
 	return (
 		<Card
 			key={card.id}
-			sx={{ width: '100%', height: 'auto', margin: '10px 1.5px', borderRadius: 2, boxShadow: 2, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', border: 'none', color: "var(--text-primary)"}}
+			sx={{ width: '100%', height: 'auto', margin: '10px 1.5px', borderRadius: 2, boxShadow: 2, display: 'flex', padding: 0,  flexDirection: 'column', justifyContent: 'center', alignItems: 'center', border: 'none', color: "var(--text-primary)" }}
 		>
 			<CardActionArea
 				onClick={() => setSelectedCard(index)}
@@ -30,7 +30,7 @@ const SpecialLoanSingleBox: React.FC<SpecialLoanSingleBoxProps> = ({ card, index
 					sx={{ height: '100%', display: 'flex', flexDirection: 'column', gap: '15px', padding: '20px', justifyContent: 'space-between', alignItems: 'center' }}>
 					<div id="TOP" className="flex items-center justify-between w-full">
 					<BsRocketTakeoffFill className="w-10 h-10 bg-[var(--gray)]  p-1 rounded-md"/>
-						<h3 className="font-extrabold flex items-center gap-3 text-lg ">{card.title}</h3>
+						<h3 className="font-extrabold flex items-center gap-3 text-lg">{card.title}</h3>
 						<FaChevronLeft />
 					</div>
 
