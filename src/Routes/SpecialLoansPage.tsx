@@ -10,13 +10,13 @@ import { RiGlobalLine } from 'react-icons/ri'
 import React from 'react'
 
   const cards = [
-    { id: 11, title: 'وام تخصصی',  isShowCountryComps: false, path: "/special-loans", icon: BiWalletAlt, tooltipdesc:"وام های ویژه وام اپ", tooltip:"وام های ویژه وام اپ" },
-    { id: 12, title: 'معرفی وام های کشوری', isShowCountryComps: true, path: "/national-loans", icon :RiGlobalLine, tooltipdesc:"وام های کشوری", tooltip:"وام های کشوری" },
-    { id: 13, title: '  معرفی وام های استانی', isShowCountryComps: false, path: "/regional-loans", icon: BiHome, tooltipdesc:"وام های استانی", tooltip:"وام های استانی" },
-    { id: 14, title: '  معرفی وام های استانی', isShowCountryComps: false, path: "/regional-loans", icon: BiHome, tooltipdesc:"وام های استانی", tooltip:"وام های استانی" },
-    { id: 15, title: '  معرفی وام های استانی', isShowCountryComps: false, path: "/regional-loans", icon: BiHome, tooltipdesc:"وام های استانی", tooltip:"وام های استانی" },
-    { id: 16, title: '  معرفی وام های استانی', isShowCountryComps: false, path: "/regional-loans", icon: BiHome, tooltipdesc:"وام های استانی", tooltip:"وام های استانی" },
-    { id: 17, title: '  معرفی وام های استانی', isShowCountryComps: false, path: "/regional-loans", icon: BiHome, tooltipdesc:"وام های استانی", tooltip:"وام های استانی" },
+    { id: 11, title: 'تسهیلان آموزش  و تحصیل',  isShowCountryComps: false, path: "/special-loans", icon: BiWalletAlt, tooltipdesc:"وام های ویژه وام اپ", tooltip:"وام های ویژه وام اپ" },
+    { id: 12, title: 'تسهیلات دوم', isShowCountryComps: true, path: "/national-loans", icon :RiGlobalLine, tooltipdesc:"وام های کشوری", tooltip:"وام های کشوری" },
+    { id: 13, title: '  تسهیلات سوم', isShowCountryComps: false, path: "/regional-loans", icon: BiHome, tooltipdesc:"وام های استانی", tooltip:"وام های استانی" },
+    { id: 14, title: '  تسهیلات چهارم', isShowCountryComps: false, path: "/regional-loans", icon: BiHome, tooltipdesc:"وام های استانی", tooltip:"وام های استانی" },
+    { id: 15, title: '  تسهیلات پنجم', isShowCountryComps: false, path: "/regional-loans", icon: BiHome, tooltipdesc:"وام های استانی", tooltip:"وام های استانی" },
+    { id: 16, title: '  تسهیلات ششم', isShowCountryComps: false, path: "/regional-loans", icon: BiHome, tooltipdesc:"وام های استانی", tooltip:"وام های استانی" },
+    { id: 17, title: '  تسهیلات هفتم', isShowCountryComps: false, path: "/regional-loans", icon: BiHome, tooltipdesc:"وام های استانی", tooltip:"وام های استانی" },
   ];
 const SpecialLoansPage = () => {
 
@@ -32,7 +32,7 @@ const SpecialLoansPage = () => {
 				<FilterDropDownSubjects />
 				<FilterDropDownGuarantee />
 			</div>
-			<div className='pb-16 px-4 mt-2 flex flex-col gap-2'>
+			<div className='pb-16 px-5 mt-2 flex flex-col gap-2'>
 				{cards.map((card, index) => (
 					<SpecialLoanSingleBox key={card.id} card={card} index={index} selectedCard={selectedCard} setSelectedCard={setSelectedCard} />
 				))}
