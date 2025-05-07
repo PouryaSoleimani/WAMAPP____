@@ -8,6 +8,7 @@ import { RiGlobalLine } from 'react-icons/ri'
 import SpecialLoanSingleBox from '../components/modules/special-loans-modules/SpecialLoanSingleBox'
 import React from 'react'
 import BottomNavBarComponent from '../components/modules/bottom-navbar/BottomNavbarComponent'
+import RegionalLoansHeaderLogos from '../components/modules/regional-loans-modules/RegionalLoansHeaderLogos'
 
   const cards = [
     { id: 11, title: 'تسهیلات آموزش  و تحصیل',  isShowCountryComps: false, path: "/special-loans", icon: BiWalletAlt, tooltipdesc:"وام های ویژه وام اپ", tooltip:"وام های ویژه وام اپ" },
@@ -25,6 +26,7 @@ const RegionalLoansPage = () => {
     <NavBarComponent />
     <div className="mx-auto relative inset-0 text-center z-10 mt-[54px] p-2 " dir="rtl">
         <HeaderTitleComponent title="وام های استانی" />
+        <RegionalLoansHeaderLogos/>
         <FilterDropDownCities />
         <FilterDropDownSubjects />
         <FilterDropDownGuarantee />
