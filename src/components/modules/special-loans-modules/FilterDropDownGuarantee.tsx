@@ -23,11 +23,9 @@ const FilterDropDownGuarantee = () => {
 				width: '100%',
 				backgroundColor: 'var(--inner-box-bg)',
 				borderRadius: '10px',
-				margin: '16px 0',
 				boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
 				direction: 'rtl',
 				'& .MuiOutlinedInput-root': {
-					padding: '8px',
 					fontSize: '16px',
 					fontFamily: 'Vazir',
 					color: 'var(--text-primary)',
@@ -45,7 +43,7 @@ const FilterDropDownGuarantee = () => {
 						{...params}
 						label="انتخاب ضمانت"
 						sx={{
-							'& .MuiInputLabel-root': { fontFamily: 'Vazir', fontSize: '14px', color: 'var(--text-primary)' },
+							'& .MuiInputLabel-root': { fontFamily: 'Vazir', fontSize: '16px', color: 'var(--text-primary)' },
 							'& input': { textAlign: 'right' }
 						}}
 					/>
