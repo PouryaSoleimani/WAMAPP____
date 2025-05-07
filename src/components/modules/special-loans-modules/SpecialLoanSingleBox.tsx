@@ -19,7 +19,7 @@ const SpecialLoanSingleBox: React.FC<SpecialLoanSingleBoxProps> = ({ card, index
 	return (
 		<Card
 			key={card.id}
-			sx={{ width: '100%', height: 'auto', margin: '10px 1.5px', borderRadius: "10px", boxShadow: 2, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', border: 'none', color: "var(--text-primary)"}}
+			sx={{ width: '100%', height: 'auto', margin: '10px 1.5px', borderRadius: 2, boxShadow: 2, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', border: 'none', color: "var(--text-primary)"}}
 		>
 			<CardActionArea
 				onClick={() => setSelectedCard(index)}
