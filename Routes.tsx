@@ -4,6 +4,7 @@ import  HomePage  from "./src/Routes/HomePage";
 import CreditPage from "./src/Routes/CreditPage";
 import SpecialLoansPage from "./src/Routes/SpecialLoansPage";
 import NationalLoansPage from "./src/Routes/NationalLoansPage";
+import RegionalLoansPage from "./src/Routes/RegionalLoansPage";
 
 
 
@@ -12,4 +13,5 @@ export const router = createBrowserRouter([
     { path: '/credits', element: <CreditPage /> },
     { path: '/special-loans', element: <SpecialLoansPage /> },
     { path: '/national-loans', element: <NationalLoansPage /> },
+    { path: '/regional-loans', element: <RegionalLoansPage /> },
 ])

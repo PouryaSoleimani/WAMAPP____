@@ -18,7 +18,7 @@ import BottomNavBarComponent from '../components/modules/bottom-navbar/BottomNav
     { id: 16, title: '  تسهیلات ششم', isShowCountryComps: false, path: "/regional-loans", icon: BiHome, tooltipdesc:"وام های استانی", tooltip:"وام های استانی" },
     { id: 17, title: '  تسهیلات هفتم', isShowCountryComps: false, path: "/regional-loans", icon: BiHome, tooltipdesc:"وام های استانی", tooltip:"وام های استانی" },
   ];
-const ProvinceLoansPage = () => {
+const RegionalLoansPage = () => {
     const [selectedCard, setSelectedCard] = React.useState(0)
   return (
     <section className="h-dvh bg-[var(--inner-bg)]">
@@ -39,4 +39,4 @@ const ProvinceLoansPage = () => {
   )
 }
 
-export default ProvinceLoansPage
+export default RegionalLoansPage
