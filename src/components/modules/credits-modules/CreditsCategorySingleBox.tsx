@@ -32,11 +32,21 @@ const CreditsCategorySingleBox: React.FC<CreditsCategorySingleBoxProps> = ({ car
       return (
 		  <Card
 			  key={card.id}
-			  sx={{ width: '100%', height: '27%', gap: '10px', margin: '5px 1.5px', borderRadius: "10px", boxShadow: 2, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', border: 'none' }}>
+			  sx={{ width: '100%', height: '27%', gap: '10px', margin: '5px 1.5px', borderRadius: "10px", boxShadow: 2, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', border: 'none', transition: 'all 0.3s ease', '&:hover': { transform: 'scale(0.98)' } }}>
 			  <CardActionArea
 				  onClick={() => setSelectedCard(index)}
 				  data-active={selectedCard === index ? '' : undefined}
-				  sx={{ backgroundColor: selectedCard === index ? 'var(--inner-box-hover)' : 'var(--inner-box-bg)', height: '100%', color: selectedCard === index ? 'var(--text-primary)' : 'var(--text-primary)', transition: 'background-color 0.3s ease', '&:hover': { backgroundColor: selectedCard === index ? 'var(--inner-box-hover)' : 'var(--inner-box-hover)' } }}>
+				  sx={{
+					  backgroundColor: 'var(--inner-box-bg)', 
+					  height: '100%',
+					  color: 'var(--text-primary)', 
+					  boxSizing : "border-box",
+					//   transform: selectedCard === index ? 'scale(0.98)' : 'scale(1)',
+					//   transition: 'transform 0.3s ease',
+					border: selectedCard === index ? '3px solid var(--border-color)' : 'none', 
+					transition: 'border 0.1s ease',
+
+				  }}>
 				  <CardContent sx={{ height: '100%', display: 'flex', flexDirection: 'column', padding: '8px' }}>
 					  <div className="flex flex-col items-start justify-start gap-2 basis-[90%]">
 						  <div className="flex items-center justify-between w-full">

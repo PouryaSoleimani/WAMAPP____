@@ -17,6 +17,7 @@
   --black:#000;
   --pink: #d70654;
   --home-bg: #7ba8c4;
+  --border-color : #7ba8c4;
   --inner-bg: #dedddd;
   --inner-box-bg : #fff;
   --inner-box-hover : #b5b5b5;
@@ -37,6 +38,7 @@
   --pink: #d70654;
   --home-bg: #000;
   --home-bg-hover : #202020;
+  --border-color : #202020;
   --inner-bg: #000;
   --inner-box-bg : #121212;
   --gray: #2b2b2b;
