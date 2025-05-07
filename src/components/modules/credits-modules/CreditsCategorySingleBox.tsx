@@ -41,8 +41,6 @@ const CreditsCategorySingleBox: React.FC<CreditsCategorySingleBoxProps> = ({ car
 					  height: '100%',
 					  color: 'var(--text-primary)', 
 					  boxSizing : "border-box",
-					//   transform: selectedCard === index ? 'scale(0.98)' : 'scale(1)',
-					//   transition: 'transform 0.3s ease',
 					border: selectedCard === index ? '3px solid var(--border-color)' : 'none', 
 					transition: 'border 0.1s ease',
 
