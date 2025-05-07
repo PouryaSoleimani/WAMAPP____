@@ -1,6 +1,5 @@
 import NavBarComponent from '../components/templates/NavBarComponent'
 import HeaderTitleComponent from '../components/modules/header-modules/HeaderTitleComponent'
-import FilterDropDownCities from '../components/modules/special-loans-modules/FilterDropDownCities'
 import FilterDropDownSubjects from '../components/modules/special-loans-modules/FilterDropDownSubject'
 import FilterDropDownGuarantee from '../components/modules/special-loans-modules/FilterDropDownGuarantee'
 import { BiHome, BiWalletAlt } from 'react-icons/bi'
@@ -27,7 +26,6 @@ const NationalLoansPage = () => {
     <div className="mx-auto relative inset-0 text-center z-10 mt-[54px] p-2 " dir="rtl">
         <HeaderTitleComponent title="وام های کشوری" />
               <NationalLoansHeaderLogos />
-        <FilterDropDownCities />
         <FilterDropDownSubjects />
         <FilterDropDownGuarantee />
     </div>
