@@ -6,7 +6,6 @@ import React from 'react'
 interface CardProps {
 	id: number
 	title: string
-	desc: string
 	path: string
 }
 interface SpecialLoanSingleBoxProps {
@@ -36,10 +35,10 @@ const SpecialLoanSingleBox: React.FC<SpecialLoanSingleBoxProps> = ({ card, index
 				onClick={() => setSelectedCard(index)}
 				data-active={selectedCard === index ? '' : undefined}
 				sx={{
-					backgroundColor: selectedCard === index ? 'var(--inner-box-hover)' : 'var(--inner-box-bg)',
+					backgroundColor: selectedCard === index ? 'var(--inner-box-hover)' : 'var(--main)',
 					height: '100%',
-					borderRadius: 4,
-					color: selectedCard === index ? 'var(--text-primary)' : 'var(--text-primary)',
+					borderRadius: 1,
+					color: selectedCard === index ? 'var(--black)' : 'var(--text-primary)',
 					transition: 'background-color 0.3s ease',
 					'&:hover': { backgroundColor: selectedCard === index ? 'var(--inner-box-hover)' : 'var(--inner-box-hover)' }
 				}}>
@@ -49,21 +48,19 @@ const SpecialLoanSingleBox: React.FC<SpecialLoanSingleBoxProps> = ({ card, index
 						display: 'flex',
 						flexDirection: 'column',
 						gap: '10px',
-						borderRadius: '25px',
-						padding: '20px 10px',
+						padding: '18px',
 						justifyContent: 'space-between',
 						alignItems: 'center'
 					}}>
 					<div id="TOP" className="flex items-center justify-between w-full">
-						<h3 className="font-bold flex items-center gap-3 text-xl "><BsRocketTakeoffFill /> {card.title}</h3>
+					<BsRocketTakeoffFill className="w-6 h-6"/>
+						<h3 className="font-bold flex items-center gap-3 text-lg ">{card.title}</h3>
 						<FaChevronLeft />
 					</div>
 
 					<div className="flex flex-col items-stretch justify-between w-full ">
-						<div className="flex w-full items-center justify-between gap-4 text-justify">
-							<p className="w-[70%] text-justify text-[var(--text-secondary)] text-md">{card.desc}</p>
-						</div>
-						<div className="flex w-full items-center justify-center bg-white py-1  rounded-3xl mt-4 ">
+						<div className="flex w-full items-center justify-between gap-4 text-justify"></div>
+						<div className="flex w-full items-center justify-center bg-[var(--gray)] py-1  rounded-md mt-4 ">
 							<p>1 تا 10 میلیون تومان</p>
 						</div>
 					</div>

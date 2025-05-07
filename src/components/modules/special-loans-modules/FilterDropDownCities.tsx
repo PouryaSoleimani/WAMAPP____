@@ -34,12 +34,12 @@ const FilterDropDownCities = () => {
         direction: 'rtl', 
         '& .MuiOutlinedInput-root': { padding: '8px', fontSize: '16px', fontFamily: 'Vazir', color: 'var(--text-primary)', border: 'none', outline: 'none', },
         '& .MuiOutlinedInput-notchedOutline': { border: 'none', },
-        '& .MuiInputLabel-root': { fontSize: '16px', fontFamily: 'Vazir', color: 'var(--text-secondary)', },
+        '& .MuiInputLabel-root': { fontSize: '16px', fontFamily: 'Vazir', color: 'var(--text-primary)', },
         '& .MuiAutocomplete-popupIndicator': { color: 'var(--text-primary)', },
       }}
       renderInput={(params) => (
         <div dir='rtl'>
-          <TextField dir='rtl' {...params} label="انتخاب شهر" sx={{ '& .MuiInputLabel-root': { fontFamily: 'Vazir', fontSize: '14px', color: 'var(--text-secondary)', }, '& input': { textAlign: 'right', }, }} />
+          <TextField dir='rtl' {...params} label="انتخاب شهر" sx={{ '& .MuiInputLabel-root': { fontFamily: 'Vazir', fontSize: '14px', color: 'var(--text-primary)', }, '& input': { textAlign: 'right', }, }} />
         </div>
       )}
     />
