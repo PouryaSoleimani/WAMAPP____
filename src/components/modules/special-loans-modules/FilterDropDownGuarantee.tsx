@@ -22,7 +22,7 @@ const FilterDropDownGuarantee = () => {
 			sx={{
 				width: '100%',
 				backgroundColor: 'var(--inner-box-bg)',
-				borderRadius: '8px',
+				borderRadius: '10px',
 				margin: '16px 0',
 				boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
 				direction: 'rtl',
@@ -55,14 +55,14 @@ const FilterDropDownGuarantee = () => {
 				listbox: {
 					sx: {
 						backgroundColor: 'var(--inner-box-bg)',
-						borderRadius: '8px',
+						borderRadius: '10px',
 						boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
 						color: 'var(--text-primary)',
 						fontFamily: 'Vazir',
 						fontSize: '16px',
 						direction: 'rtl',
 						'& .MuiAutocomplete-option': {
-							'&:hover': { backgroundColor: 'red' },
+							'&:hover': { backgroundColor: 'var(--inner-box-hover)' },
 							padding: '8px',
 							border: 'none',
 							outline: 'none',
