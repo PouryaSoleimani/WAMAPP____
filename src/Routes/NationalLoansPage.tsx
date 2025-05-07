@@ -8,6 +8,7 @@ import SpecialLoanSingleBox from '../components/modules/special-loans-modules/Sp
 import React from 'react'
 import BottomNavBarComponent from '../components/modules/bottom-navbar/BottomNavbarComponent'
 import NationalLoansHeaderLogos from '../components/modules/national-loans-modules/NationalLoansHeaderLogos'
+import FilterDropDownCompany from '../components/modules/national-loans-modules/FilterDropDownCompany'
 
   const cards = [
     { id: 11, title: 'تسهیلات آموزش  و تحصیل',  isShowCountryComps: false, path: "/special-loans", icon: BiWalletAlt, tooltipdesc:"وام های ویژه وام اپ", tooltip:"وام های ویژه وام اپ" },
@@ -25,10 +26,11 @@ const NationalLoansPage = () => {
           <NavBarComponent />
     <div className="mx-auto relative inset-0 text-center z-10 mt-[54px] p-2 " dir="rtl">
         <HeaderTitleComponent title="وام های کشوری" />
-              <NationalLoansHeaderLogos />
+        <NationalLoansHeaderLogos />
+        <FilterDropDownCompany />
         <FilterDropDownSubjects />
         <FilterDropDownGuarantee />
-    </div>
+      </div>
     <div className='pb-16 px-5 mt-2 flex flex-col gap-2'>
         {cards.map((card, index) => (
             <SpecialLoanSingleBox key={card.id} card={card} index={index} selectedCard={selectedCard} setSelectedCard={setSelectedCard} />
