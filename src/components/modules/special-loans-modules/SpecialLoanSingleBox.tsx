@@ -19,12 +19,12 @@ const SpecialLoanSingleBox: React.FC<SpecialLoanSingleBoxProps> = ({ card, index
 	return (
 		<Card
 			key={card.id}
-			sx={{ width: '100%', height: 'auto', margin: '12px 1.5px', borderRadius: "10px", boxShadow: 2, display: 'flex', padding: 0,  flexDirection: 'column', justifyContent: 'center', alignItems: 'center', border: 'none', color: "var(--text-primary)" }}
+			sx={{ width: '100%', height: 'auto', margin: '12px 1.5px', borderRadius: "10px", boxShadow: 2, display: 'flex', padding: 0,  flexDirection: 'column', justifyContent: 'center', alignItems: 'center', border: 'none',transition : "all 300ms ease" ,color: "var(--text-primary)" , scale: selectedCard === index ? '0.98' : '1', }}
 		>
 			<CardActionArea
 				onClick={() => setSelectedCard(index)}
 				data-active={selectedCard === index ? '' : undefined}
-				sx={{ backgroundColor: selectedCard === index ? 'var(--inner-box-hover)' : 'var(--grid-box)', height: '100%', borderRadius: 2, color: selectedCard === index ? 'var(--text-primary)' : 'var(--text-primary)', transition: 'background-color 0.3s ease', '&:hover': { backgroundColor: selectedCard === index ? 'var(--inner-box-hover)' : 'var(--inner-box-hover)' } }}
+				sx={{ boxSizing:"border-box",height: '100%', borderRadius: 2,color: selectedCard === index ? 'var(--text-primary)' : 'var(--text-primary)', transition: 'background-color 0.3s ease', '&:hover': { backgroundColor: selectedCard === index ? 'var(--inner-box-hover)' : 'var(--inner-box-hover)' } }}
 			>
 				<CardContent
 					sx={{ height: '100%', display: 'flex', flexDirection: 'column', gap: '15px', padding: '20px', justifyContent: 'space-between', alignItems: 'center' }}>
