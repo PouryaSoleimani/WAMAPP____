@@ -41,8 +41,8 @@ const CreditsCategorySingleBox: React.FC<CreditsCategorySingleBoxProps> = ({ car
 					  height: '100%',
 					  color: 'var(--text-primary)', 
 					  boxSizing : "border-box",
-					border: selectedCard === index ? '3px solid var(--border-color)' : 'none', 
-					transition: 'border 0.1s ease',
+					  border: selectedCard === index ? '3px solid white' : 'none', 
+					  transition: 'border 0.1s ease',
 
 				  }}>
 				  <CardContent sx={{ height: '100%', display: 'flex', flexDirection: 'column', padding: '8px' }}>
