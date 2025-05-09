@@ -1,12 +1,12 @@
 import React from 'react'
-import CreditsCategorySingleBox from './CreditsCategorySingleBox';
-import { BiHome, BiWalletAlt } from 'react-icons/bi';
-import { RiGlobalLine } from 'react-icons/ri';
+import CreditsCategorySingleBox from './CreditsCategorySingleBox'
+import { BiHome, BiWalletAlt } from 'react-icons/bi'
+import { RiGlobalLine } from 'react-icons/ri'
 
 const CreditsCategoryBoxWrapper = () => {
-  const [selectedCard, setSelectedCard] = React.useState(0);
+	const [selectedCard, setSelectedCard] = React.useState(0)
 
-  const cards = [
+	const cards = [
 		{
 			id: 1,
 			title: 'وام تخصصی',
@@ -39,7 +39,7 @@ const CreditsCategoryBoxWrapper = () => {
 		}
 	]
 
-  return (
+	return (
 		<div className="flex flex-col h-[75dvh] place-content-around p-0.5">
 			{cards.map((card, index) => (
 				<CreditsCategorySingleBox key={card.id} card={card} index={index} selectedCard={selectedCard} setSelectedCard={setSelectedCard} />
@@ -49,4 +49,3 @@ const CreditsCategoryBoxWrapper = () => {
 }
 
 export default CreditsCategoryBoxWrapper
-
