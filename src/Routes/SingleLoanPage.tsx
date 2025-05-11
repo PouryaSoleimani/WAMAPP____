@@ -1,4 +1,3 @@
-import React from 'react'
 import { useParams } from 'react-router'
 import {cards} from "./../../db/db.json"
 import NavBarComponent from '../components/templates/NavBarComponent'
@@ -13,10 +12,10 @@ const SingleLoan = cards.find(card => card.id === Number(id))
 console.info(SingleLoan)
 
   return (
-		<section>
+	  <section className=' bg-[var(--inner-bg)]'>
 			<NavBarComponent />
 			<div id="MAIN" className="w-screen h-screen flex items-start justify-center p-5 pt-20">
-				<div className="w-full  bg-red-600/30 rounded-lg p-3">
+				<div className="w-full  rounded-lg p-3 bg-[var(--main)]">
 				  <h3 id="HEADER__TITLE" className="p-3 pl-0 w-full flex items-center justify-between"> مبلغ تسهیلات <BiChevronLeft className='w-8 h-8' /> </h3>
 				  <ul id="INNER" className='bg-blue-600/30 w-full  rounded-lg list-disc list-inside p-3 space-y-4'>
 					  <li>شهریه یکساله</li>
