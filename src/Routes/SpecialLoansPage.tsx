@@ -18,6 +18,7 @@ import React from 'react'
     { id: 16, title: '  تسهیلات ششم', isShowCountryComps: false, path: "/regional-loans", icon: BiHome, tooltipdesc:"وام های استانی", tooltip:"وام های استانی" },
     { id: 17, title: '  تسهیلات هفتم', isShowCountryComps: false, path: "/regional-loans", icon: BiHome, tooltipdesc:"وام های استانی", tooltip:"وام های استانی" },
   ];
+  
 const SpecialLoansPage = () => {
 
     const [selectedCard, setSelectedCard] = React.useState(0)

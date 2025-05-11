@@ -18,7 +18,7 @@ interface SpecialLoanSingleBoxProps {
 
 const SpecialLoanSingleBox: React.FC<SpecialLoanSingleBoxProps> = ({ card, index, selectedCard, setSelectedCard }) => {
 	return (
-		<Link to="/single-loan-page">
+		<Link to="/single-loan-page" >
 			<Card
 				key={card.id}
 				sx={{

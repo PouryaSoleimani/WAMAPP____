@@ -15,5 +15,5 @@ export const router = createBrowserRouter([
 	{ path: '/special-loans', element: <SpecialLoansPage /> },
 	{ path: '/national-loans', element: <NationalLoansPage /> },
 	{ path: '/regional-loans', element: <RegionalLoansPage /> },
-	{ path: '/single-loan-page', element: <SingleLoanPage /> }
+	{ path: '/single-loan-page/:id', element: <SingleLoanPage /> }
 ])
