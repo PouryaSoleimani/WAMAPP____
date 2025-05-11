@@ -9,12 +9,8 @@ import { Button } from '@mui/material'
 
 const SingleLoanPage = () => {
 const {id} = useParams()
-console.info(id)
-
 const SingleLoan = cards.find(card => card.id === Number(id))
-console.info("SINGLE LOAN" , SingleLoan)
-
-
+console.info(SingleLoan)
 
   return (
 		<section>
