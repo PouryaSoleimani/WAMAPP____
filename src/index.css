@@ -11,13 +11,18 @@
 }
 
 @font-face {
+  font-family: "Vazir Light";
+  src: url("/fonts/Vazir-Light.woff2") format("woff2"),
+}
+
+@font-face {
   font-family: "Vazir Thin";
   src: url("/fonts/Vazir-Thin.woff2") format("woff2"),
 }
 
 /* THEME */
 :root {
-  font-family: "Vazir Thin", system-ui;
+  font-family: "Vazir Light", system-ui;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -95,6 +100,10 @@ body {
 
 .VazirMedium {
   font-family: "Vazir Medium";
+}
+
+.VazirLight {
+  font-family: "Vazir Light";
 }
 
 .VazirThin {
