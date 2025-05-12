@@ -1,4 +1,3 @@
-import HeaderTitleComponent from "../components/modules/header-modules/HeaderTitleComponent"
 import NavBarComponent from "../components/templates/NavBarComponent"
 import { useParams } from "react-router"
 import { Button } from "@mui/material"
@@ -17,19 +16,19 @@ const LoanAccessPage = () => {
         <section className="bg-[var(--inner-bg)]">
             <NavBarComponent />
             <div id="MAIN" className="w-screen h-screen flex flex-col items-start justify-start gap-y-3 p-3 pt-16 text-[var(--text-primary)]">
-                <HeaderTitleComponent title={SingleLoan?.title?.toString() || 'دریافت تسهیلات'} />
-                <div className="w-full  rounded-lg p-3.5 bg-[var(--grid-box)] shadow-lg shadow-zinc-800 ">
-                    <h3 id="HEADER__TITLE" className="p-3 rounded text-lg w-full flex items-center justify-between border"> مبلغ <p>40,000,000 ریال</p> </h3>
-                    <ul id="INNER" className='bg-[var(--inner-bg) mt-3  w-full text-sm font-extralight  rounded-lg list-disc list-inside p-3 space-y-4 text-[var(--text-secondary)]'>
-                        <li className="w-full flex items-center justify-between border-b pb-4">مبلغ تسهیلات <p>40,000,000 ریال</p></li>
-                        <li className="w-full flex items-center justify-between border-b pb-4">میزان سود <p>14 درصد</p></li>
-                        <li className="w-full flex items-center justify-between border-b pb-4">مبلغ ماهانه <p>1,225,000 ریال</p></li>
-                        <li className="w-full flex items-center justify-between border-b pb-4">سود <p>1,225,000 ریال</p></li>
-                        <li className="w-full flex items-center justify-between border-b pb-4 text-center">در صورت تغییر تصمیم در تعداد باز‍برداخت اقساط ُ‌تصمیم شما قابل اجرا می باشد .</li>
+                <div className="w-full  rounded-lg p-3.5 bg-[var(--grid-box)] shadow-sm shadow-zinc-800 mt-4">
+                    <h3 id="HEADER__TITLE" className="p-3 rounded text-lg w-full flex items-center justify-between border VazirBold"> مبلغ <p>۴۰,۰۰۰,۰۰۰ ریال</p> </h3>
+                    <ul id="INNER" className='bg-[var(--inner-bg) mt-3  w-full text-sm font-extralight  rounded-lg list-disc list-inside VazirLight p-3 space-y-4 bg-blue-200/70 text-blue-900'>
+                        <li className="w-full flex items-center justify-between border-b pb-4">مبلغ تسهیلات <p className="VazirMedium">۴۰,۰۰۰,۰۰۰ ریال</p></li>
+                        <li className="w-full flex items-center justify-between border-b pb-4">میزان سود <p className="VazirMedium">۱۴ درصد</p></li>
+                        <li className="w-full flex items-center justify-between border-b pb-4">تعداد ماه <p className="VazirMedium">۱۲ ماه</p></li>
+                        <li className="w-full flex items-center justify-between border-b pb-4">مبلغ ماهانه <p className="VazirMedium">۱‍,۲۲۵,۰۰۰ ریال</p></li>
+                        <li className="w-full flex items-center justify-between border-b pb-4">سود <p className="VazirMedium">۱‍,۲۲۵,۰۰۰  ریال</p></li>
                     </ul>
+                        <p className="w-full flex items-center justify-between  pb-4 text-center text-sm VazirLight bg-pink-200/70 text-pink-900 p-3 my-2 rounded">در صورت تغییر تصمیم در تعداد باز‍برداخت اقساط ُ‌تصمیم شما قابل اجرا می باشد .</p>
                 </div>
-                <Button variant='contained' color='primary' sx={{ width: "100%", margin: "5px 0 0 0", fontWeight: "bold", padding: "13px", ":hover": { backgroundColor: "darkgreen" } }} > اعتبار سنجی </Button>
-                <Button variant='contained' color='success' sx={{ width: "100%", margin: "-4px 0 0 0", fontWeight: "bold", padding: "13px", ":hover": { backgroundColor: "darkgreen" } }} > دریافت تسهیلات </Button>
+                <Button variant='contained' color='primary' sx={{ width: "100%", margin: "5px 0 0 0", padding: "13px", fontFamily: "Vazir Medium", fontSize: "16px" }} > اعتبار سنجی </Button>
+                <Button variant='contained' color='success' sx={{ width: "100%", margin: "-4px 0 0 0", padding: "13px", fontFamily: "Vazir Medium", fontSize: "16px" }} > دریافت تسهیلات </Button>
             </div>
             <BottomNavBarComponent />
 
