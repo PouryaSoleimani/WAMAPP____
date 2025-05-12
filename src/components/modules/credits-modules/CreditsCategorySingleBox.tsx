@@ -49,7 +49,7 @@ const CreditsCategorySingleBox: React.FC<CreditsCategorySingleBoxProps> = ({ car
 					  <div className="flex flex-col items-start justify-start gap-2 basis-[90%]">
 						  <div className="flex items-center justify-between w-full">
 							  <div className="flex items-center justify-start w-full">
-								  <h3 className="font-extrabold text-lg m-0 p-0">{card.title}</h3>
+								  <h3 className="font-extrabold text-lg m-0 p-0 VazirBold">{card.title}</h3>
 								  <ClickAwayListener onClickAway={handleClickAway}>
 									  <Tooltip onClose={() => setOpen(false)} open={open} disableFocusListener disableHoverListener disableTouchListener title={<p>{card.tooltipdesc}</p>} slots={{ transition: Fade }} slotProps={{ popper: { disablePortal: true, modifiers: [{ name: 'offset', options: { offset: [0, -14] } }] } }} sx={{ '& .MuiTooltip-popupIndicator': { color: 'var(--text-secondary)' } }}>
 										  <IconButton>

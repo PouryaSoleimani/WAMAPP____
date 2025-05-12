@@ -16,7 +16,7 @@ const boxDatas = [
 
 const CategoryGridSection = () => {
     return (
-        <div className='GRID__PARENT'>
+        <div className='GRID__PARENT VazirBold'>
             {boxDatas.map((item) => (
                 <CategoryGridBoxComponent key={item.id} {...item} />
             ))}

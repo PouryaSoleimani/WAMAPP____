@@ -33,7 +33,7 @@ const NavBarComponent = () => {
     <div className="w-full z-50 fixed top-0 left-0 right-0 bg-[var(--home-bg)] flex flex-wrap items-center justify-between flex-row-reverse pl-2">
       <div id="NAVBAR___LEFT" className="w-1/3 h-full flex items-center justify-end"    >
         <Link to="/" className="flex items-center justify-center h-full">
-        <img src="/logo.png" alt="vamapp-logo" className="w-20" />
+          <img src="/logo.png" alt="vamapp-logo" className="w-20" />
         </Link>
       </div>
       <div id="NAVBAR___RIGHT" className="w-2/3 h-full flex items-stretch justify-start pr-3 gap-1"  >
@@ -46,8 +46,8 @@ const NavBarComponent = () => {
             placeholder="Toggle"
             className="mx-2 w-12 h-12 text-2xl text-[var(--text-primary)]"
             toggled={isDark}
-            onPointerEnterCapture={() => {}}
-            onPointerLeaveCapture={() => {}}
+            onPointerEnterCapture={() => { }}
+            onPointerLeaveCapture={() => { }}
           />
         </div>
       </div>

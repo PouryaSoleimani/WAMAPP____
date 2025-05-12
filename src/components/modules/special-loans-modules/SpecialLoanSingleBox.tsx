@@ -15,7 +15,7 @@ const SpecialLoanSingleBox: React.FC<SpecialLoanSingleBoxProps> = ({ card, index
 					<CardContent sx={{ height: '100%', display: 'flex', flexDirection: 'column', gap: '15px', padding: '20px', justifyContent: 'space-between', alignItems: 'center' }}>
 						<div id="TOP" className="flex items-center justify-between w-full">
 							<BsRocketTakeoffFill className="w-10 h-10 bg-[var(--gray)]  p-1 rounded-md" />
-							<h3 className="font-extrabold flex items-center gap-3 text-lg">{card.title}</h3>
+							<h3 className="font-extrabold flex items-center gap-3 text-lg VazirBold">{card.title}</h3>
 							<FaChevronLeft />
 						</div>
 						<div className="flex flex-col items-stretch justify-between w-full ">

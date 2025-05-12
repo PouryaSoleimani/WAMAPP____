@@ -9,7 +9,7 @@ const CategoryFlexSection = () => {
 
 
     return (
-        <div className='flex  items-center justify-center gap-2 w-full px-2.5 m-0'>
+        <div className='flex  items-center justify-center gap-2 w-full px-2.5 m-0 VazirBold'>
             {categoryFlexBoxesData.map((item) => (
                 <CategoryFlexBoxComponent key={item.id} {...item} />
             ))}
