@@ -1,19 +1,16 @@
-import { BiChevronLeft } from "react-icons/bi"
 import HeaderTitleComponent from "../components/modules/header-modules/HeaderTitleComponent"
 import NavBarComponent from "../components/templates/NavBarComponent"
-import { useNavigate, useParams } from "react-router"
+import { useParams } from "react-router"
 import { Button } from "@mui/material"
 import BottomNavBarComponent from "../components/modules/bottom-navbar/BottomNavbarComponent"
-import {cards} from "./../../db/db.json"
+import { cards } from "./../../db/db.json"
 
 
-const LoanAccessPage = ( ) => {
+const LoanAccessPage = () => {
 
     const { id } = useParams()
     const SingleLoan = cards.find(card => card.id === Number(id))
     console.info(SingleLoan)
-    const navigate = useNavigate()
-    function goBackHandler() { navigate(-1) }
 
 
     return (
@@ -31,12 +28,8 @@ const LoanAccessPage = ( ) => {
                         <li className="w-full flex items-center justify-between border-b pb-4 text-center">در صورت تغییر تصمیم در تعداد باز‍برداخت اقساط ُ‌تصمیم شما قابل اجرا می باشد .</li>
                     </ul>
                 </div>
-                <Button variant='contained' color='primary' sx={{ width: "100%", margin: "5px 0 0 0", fontWeight: "bold", padding: "13px", ":hover": { backgroundColor: "darkgreen" } }} >
-                    اعتبار سنجی
-                </Button>
-                <Button variant='contained' color='success' sx={{ width: "100%", margin: "-4px 0 0 0", fontWeight: "bold", padding: "13px", ":hover": { backgroundColor: "darkgreen" } }} >
-                    دریافت تسهیلات
-                </Button>
+                <Button variant='contained' color='primary' sx={{ width: "100%", margin: "5px 0 0 0", fontWeight: "bold", padding: "13px", ":hover": { backgroundColor: "darkgreen" } }} > اعتبار سنجی </Button>
+                <Button variant='contained' color='success' sx={{ width: "100%", margin: "-4px 0 0 0", fontWeight: "bold", padding: "13px", ":hover": { backgroundColor: "darkgreen" } }} > دریافت تسهیلات </Button>
             </div>
             <BottomNavBarComponent />
 
