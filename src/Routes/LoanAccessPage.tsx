@@ -23,7 +23,7 @@ const LoanAccessPage = ( ) => {
                 <HeaderTitleComponent title={SingleLoan?.title?.toString() || 'دریافت تسهیلات'} />
                 <div className="w-full  rounded-lg p-3.5 bg-[var(--grid-box)] shadow-lg shadow-zinc-800 ">
                     <h3 id="HEADER__TITLE" className="p-3 rounded text-lg w-full flex items-center justify-between border"> مبلغ <p>40,000,000 ریال</p> </h3>
-                    <ul id="INNER" className='bg-[var(--inner-bg)]  w-full text-sm font-extralight  rounded-lg list-disc list-inside p-3 space-y-4 text-[var(--text-secondary)]'>
+                    <ul id="INNER" className='bg-[var(--inner-bg) mt-3  w-full text-sm font-extralight  rounded-lg list-disc list-inside p-3 space-y-4 text-[var(--text-secondary)]'>
                         <li className="w-full flex items-center justify-between border-b pb-4">مبلغ تسهیلات <p>40,000,000 ریال</p></li>
                         <li className="w-full flex items-center justify-between border-b pb-4">میزان سود <p>14 درصد</p></li>
                         <li className="w-full flex items-center justify-between border-b pb-4">مبلغ ماهانه <p>1,225,000 ریال</p></li>
