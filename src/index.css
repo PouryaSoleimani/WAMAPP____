@@ -45,6 +45,7 @@
   --text-secondary: #4b4b4b;
   --text-menu-title: #212121;
   --menu-bg: #fff;
+  ---blue-text : #1c398e;
 }
 
 .dark {
@@ -66,6 +67,7 @@
   --text-secondary: #a3a2a2;
   --text-menu-title: #cdcdcd;
   --menu-bg: #202020;
+    ---blue-text : #143187;
 }
 
 html,
