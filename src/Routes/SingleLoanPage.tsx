@@ -21,8 +21,8 @@ const SingleLoanPage = () => {
 			<NavBarComponent />
 			<div id="MAIN" className="w-screen h-screen flex flex-col items-start justify-start gap-y-3 p-3 pt-16 text-[var(--text-primary)]">
 				<HeaderTitleComponent title={SingleLoan?.title?.toString() || 'دریافت تسهیلات'} />
-				<div className="w-full  rounded-lg p-3.5 bg-[var(--grid-box)] shadow-lg shadow-zinc-800 ">
-					<h3 id="HEADER__TITLE" className="p-3 pl-0  text-lg w-full flex items-center justify-between"> مبلغ تسهیلات <BiChevronLeft onClick={goBackHandler} className='w-8 h-8 cursor-pointer' /> </h3>
+				<div className="w-full  rounded-lg p-3.5 bg-[var(--grid-box)] shadow-sm shadow-zinc-800 ">
+					<h3 id="HEADER__TITLE" className="p-3 pl-0  text-lg w-full flex items-center justify-between VazirBold"> مبلغ تسهیلات <BiChevronLeft onClick={goBackHandler} className='w-8 h-8 cursor-pointer' /> </h3>
 					<ul id="INNER" className='bg-[var(--inner-bg)]  w-full text-sm font-extralight  rounded-lg list-disc list-inside px-3 py-7 space-y-4 text-[var(--text-secondary)]'>
 						<li>شهریه یکساله</li>
 						<li>تعداد ترم</li>
@@ -36,7 +36,7 @@ const SingleLoanPage = () => {
 					to={`/loan-access-page/${SingleLoan?.id}`}
 					variant='contained'
 					color='primary'
-					sx={{ width: "100%", margin: "2px auto", fontFamily: "Vazir Bold", padding: "11px", fontSize: "20px", letterSpacing: "-0.3px", ":hover": { backgroundColor: "darkblue" } }}
+					sx={{ width: "100%", margin: "2px auto", fontFamily: "Vazir Bold", padding: "11px", fontSize: "20px", letterSpacing: "-0.3px",borderRadius : "8px" }}
 				>
 					دریافت تسهیلات
 				</Button>
