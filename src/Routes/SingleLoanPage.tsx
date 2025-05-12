@@ -1,4 +1,4 @@
-import { useNavigate, useParams } from 'react-router'
+import { Link, useNavigate, useParams } from 'react-router'
 import {cards} from "./../../db/db.json"
 import NavBarComponent from '../components/templates/NavBarComponent'
 import BottomNavBarComponent from '../components/modules/bottom-navbar/BottomNavbarComponent'
@@ -32,6 +32,8 @@ function goBackHandler(){ navigate(-1) }
 				  </ul>
 				</div>
 			  <Button
+				  component={Link}
+				  to={`/loan-access-page/${SingleLoan?.id}`}
 				  variant='contained'
 				  color='success'
 				  sx={{ width: "100%", margin: "2px auto", fontWeight: "bold", padding: "13px", ":hover": { backgroundColor: "darkgreen" } }}
