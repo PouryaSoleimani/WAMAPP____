@@ -13,7 +13,7 @@ function HomePage() {
                   <NavBarComponent />
                   <main className="mx-auto relative inset-0 text-center z-10 h-auto mt-[54px] p-2 bg-[var(--home-bg)]" dir="rtl">
                         <Link to="/credits">
-                        <HeaderTitleComponent title="دریافت اعتبار خرید کالا" />
+                        <HeaderTitleComponent textSize="3xl" title="دریافت اعتبار خرید کالا" />
                         </Link>
                         <HeaderButtonsTopComponent />
                         <CategoryFlexSection />

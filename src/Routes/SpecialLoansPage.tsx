@@ -28,7 +28,7 @@ const SpecialLoansPage = () => {
 		<section className="bg-[var(--inner-bg)]">
 			<NavBarComponent />
 			<div className="mx-auto relative inset-0 text-center z-10 mt-[54px] p-2 " dir="rtl">
-				<HeaderTitleComponent title="وام های تخصصی" />
+				<HeaderTitleComponent textSize='2xl' title="وام های تخصصی" />
 				<FilterDropDownCities />
 				<FilterDropDownSubjects />
 				<FilterDropDownGuarantee />
