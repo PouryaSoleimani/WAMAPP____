@@ -24,11 +24,11 @@ const LoanAccessPage = ( ) => {
                 <div className="w-full  rounded-lg p-3.5 bg-[var(--grid-box)] shadow-lg shadow-zinc-800 ">
                     <h3 id="HEADER__TITLE" className="p-3 rounded text-lg w-full flex items-center justify-between border"> مبلغ <p>40,000,000 ریال</p> </h3>
                     <ul id="INNER" className='bg-[var(--inner-bg)]  w-full text-sm font-extralight  rounded-lg list-disc list-inside p-3 space-y-4 text-[var(--text-secondary)]'>
-                        <li>مبلغ تسهیلات p</li>
-                        <li>تعداد ترم</li>
-                        <li>میزان سود</li>
-                        <li>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در </li>
-                        <li>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کارب</li>
+                        <li className="w-full flex items-center justify-between border-b pb-4">مبلغ تسهیلات <p>40,000,000 ریال</p></li>
+                        <li className="w-full flex items-center justify-between border-b pb-4">میزان سود <p>40,000,000 ریال</p></li>
+                        <li className="w-full flex items-center justify-between border-b pb-4">مبلغ تسهیلات <p>40,000,000 ریال</p></li>
+                        <li className="w-full flex items-center justify-between border-b pb-4">مبلغ تسهیلات <p>40,000,000 ریال</p></li>
+                        <li className="w-full flex items-center justify-between border-b pb-4">مبلغ تسهیلات <p>40,000,000 ریال</p></li>
                     </ul>
                 </div>
                 <Button
