@@ -1,26 +1,35 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: "Vazir";
-  src: url("/fonts/Vazir-Bold.woff") format("woff"),
-    url("/fonts/Vazir-Medium.woff") format("woff"),
-    url("/fonts/Vazir-Thin.woff") format("woff");
+  font-family: "Vazir Bold";
+  src: url("/fonts/Vazir-Bold.woff2") format("woff2"),
 }
+
+@font-face {
+  font-family: "Vazir Medium";
+  src: url("/fonts/Vazir-Medium.woff2") format("woff2"),
+}
+
+@font-face {
+  font-family: "Vazir Thin";
+  src: url("/fonts/Vazir-Thin.woff2") format("woff2"),
+}
+
 /* THEME */
 :root {
-  font-family: "Vazir", system-ui;
+  font-family: "Vazir Thin", system-ui;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  --main : "#fff";
-  --black:#000;
+  --main: "#fff";
+  --black: #000;
   --pink: #d70654;
   --home-bg: #7ba8c4;
-  --border-color : #7ba8c4;
+  --border-color: #7ba8c4;
   --inner-bg: #dedddd;
-  --inner-box-bg : #fff;
-  --inner-box-hover : #b5b5b5;
+  --inner-box-bg: #fff;
+  --inner-box-hover: #b5b5b5;
   --header-button-bg: #fff;
   --header-button-2-text: #d70654;
   --gray: #dde2e5;
@@ -34,15 +43,15 @@
 }
 
 .dark {
-  --main : #000;
+  --main: #000;
   --pink: #d70654;
   --home-bg: #000;
-  --home-bg-hover : #202020;
-  --border-color : #202020;
+  --home-bg-hover: #202020;
+  --border-color: #202020;
   --inner-bg: #000;
-  --inner-box-bg : #121212;
+  --inner-box-bg: #121212;
   --gray: #2b2b2b;
-  --inner-box-hover : #222222;
+  --inner-box-hover: #222222;
   --header-button-bg: #7ba8c4;
   --header-button-2-text: #d70654;
   --grid-box: #121212;
@@ -54,7 +63,8 @@
   --menu-bg: #202020;
 }
 
-html, body {
+html,
+body {
   height: 100vh;
   margin: 0;
   background-color: var(--main);
@@ -77,4 +87,16 @@ html, body {
 .navbar-blur {
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(30px);
+}
+
+.VazirBold {
+  font-family: "Vazir Bold";
+}
+
+.VazirMedium {
+  font-family: "Vazir Medium";
+}
+
+.VazirThin {
+  font-family: "Vazir Thin";
 }
