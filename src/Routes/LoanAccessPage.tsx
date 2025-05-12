@@ -31,10 +31,10 @@ const LoanAccessPage = ( ) => {
                         <li className="w-full flex items-center justify-between border-b pb-4 text-center">در صورت تغییر تصمیم در تعداد باز‍برداخت اقساط ُ‌تصمیم شما قابل اجرا می باشد .</li>
                     </ul>
                 </div>
-                <Button variant='contained' color='primary' sx={{ width: "100%", margin: "2px auto", fontWeight: "bold", padding: "13px", ":hover": { backgroundColor: "darkgreen" } }} >
+                <Button variant='contained' color='primary' sx={{ width: "100%", margin: "5px 0 0 0", fontWeight: "bold", padding: "13px", ":hover": { backgroundColor: "darkgreen" } }} >
                     اعتبار سنجی
                 </Button>
-                <Button variant='contained' color='success' sx={{ width: "100%", margin: "2px auto", fontWeight: "bold", padding: "13px", ":hover": { backgroundColor: "darkgreen" } }} >
+                <Button variant='contained' color='success' sx={{ width: "100%", margin: "-4px 0 0 0", fontWeight: "bold", padding: "13px", ":hover": { backgroundColor: "darkgreen" } }} >
                     دریافت تسهیلات
                 </Button>
             </div>
