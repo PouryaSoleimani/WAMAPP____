@@ -8,21 +8,15 @@ import { CiCircleCheck } from 'react-icons/ci';
 const StyledMenu = styled((props: MenuProps) => (
     <Menu
         elevation={0}
-        anchorOrigin={{
-            vertical: 'bottom',
-            horizontal: 'center',
-        }}
-        transformOrigin={{
-            vertical: 'top',
-            horizontal: 'center',
-        }}
+        anchorOrigin={{ vertical: 'bottom', horizontal: 'center', }}
+        transformOrigin={{ vertical: 'top', horizontal: 'center', }}
         {...props}
     />
 ))(({ theme }) => ({
     '& .MuiPaper-root': {
-
         borderRadius: 20,
         marginTop: theme.spacing(1),
+        border: "1px solid lightgray",
         minWidth: "90%",
         color: 'rgb(55, 65, 81)',
         padding: "10px 4px",
