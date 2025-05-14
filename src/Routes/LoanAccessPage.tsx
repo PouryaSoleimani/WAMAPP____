@@ -19,7 +19,7 @@ const LoanAccessPage = () => {
             <div id="MAIN" className="w-screen h-screen flex flex-col items-start justify-start gap-y-3 p-3 pt-16 text-[var(--text-primary)]">
                 <div className="w-full  rounded-lg p-3.5 bg-[var(--grid-box)] shadow-sm shadow-zinc-800 mt-4">
                     <h3 id="HEADER__TITLE" className="p-3 rounded text-lg w-full flex items-center justify-between border VazirBold border-[var(--inner-box-hover)]"> مبلغ <p>۴۰,۰۰۰,۰۰۰ ریال</p> </h3>
-                    <div className="bg-[var(--inner-bg)] p-2 mt-2 rounded-full flex gap-6 items-center VazirThin tracking-tight text-[var(--text-secondary)] cursor-pointer text-sm"><BiPlus className="bg-[var(--inner-box-bg)] rounded-full p-1 w-6 h-6 border border-zinc-400" />تعداد اقساط خود را از ۱ تا ۱۲ ماه انتخاب کنید</div>
+                    <div className="bg-[var(--inner-bg)] p-2 mt-2 rounded-full flex gap-6 items-center VazirLight tracking-tight text-[var(--text-secondary)] cursor-pointer text-sm"><BiPlus className="bg-[var(--inner-box-bg)] rounded-full p-1 w-6 h-6 border border-zinc-400" />تعداد اقساط خود را از ۱ تا ۱۲ ماه انتخاب کنید</div>
                     <ul id="INNER" className='bg-[var(--inner-bg) mt-3  w-full text-sm font-extralight  rounded-lg list-disc list-inside VazirMedium p-3 space-y-4 bg-blue-200/70 text-[var(---blue-text)]'>
                         <li className="w-full flex items-center justify-between border-b pb-4">مبلغ تسهیلات <p>۴۰,۰۰۰,۰۰۰ ریال</p></li>
                         <li className="w-full flex items-center justify-between border-b pb-4">میزان سود <p>۱۴ درصد</p></li>
