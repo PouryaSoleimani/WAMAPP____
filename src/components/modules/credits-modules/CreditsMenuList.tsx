@@ -35,7 +35,6 @@ const StyledMenu = styled((props: MenuProps) => (
 }));
 
 // COMPONENT
-
 export function CreditsMenuList() {
     const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
     const open = Boolean(anchorEl);
