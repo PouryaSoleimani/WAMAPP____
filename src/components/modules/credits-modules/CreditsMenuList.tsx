@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { styled, alpha } from '@mui/material/styles';
+import { styled } from '@mui/material/styles';
 import Menu, { MenuProps } from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import { BiPlus } from 'react-icons/bi'
@@ -25,7 +25,7 @@ const StyledMenu = styled((props: MenuProps) => (
         '& .MuiMenuItem-root': {
             '& .MuiSvgIcon-root': { fontSize: 18, color: theme.palette.text.secondary, marginRight: theme.spacing(1.5), },
             '&:active': {
-                backgroundColor: alpha(theme.palette.primary.main, theme.palette.action.selectedOpacity,),
+                backgroundColor: "#7ba8c451",
             },
         },
         ...theme.applyStyles('dark', {
